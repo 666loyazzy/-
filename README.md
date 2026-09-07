@@ -79,6 +79,7 @@ The current working hypothesis is that **single-boundary Edge→Cloud partitioni
 ## Repository Files
 
 - [`PAPERS.md`](PAPERS.md) — strict top-venue paper index with relevance labels
+- [`papers/README.md`](papers/README.md) — source PDFs, provenance, and translation status
 - [`TAXONOMY.md`](TAXONOMY.md) — DynoPipe-specific classification rules
 - [`notes/DynoPipe.md`](notes/DynoPipe.md) — current core reading note
 - [`research-gaps/README.md`](research-gaps/README.md) — testable hypotheses
