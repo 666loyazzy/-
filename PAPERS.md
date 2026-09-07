@@ -1,75 +1,80 @@
-# Master Paper Index
+# DynoPipe-Direction Paper Index
 
-A compact index. Important papers should also have structured notes under `notes/`.
+Only papers directly relevant to **dynamic edge-cloud LLM serving, partitioning, offloading, pipeline orchestration, mobility, state migration, and realistic WAN-aware inference** are included.
 
-## Algorithm-Level
+## P0 — Core / Must Read
 
-### Speculative Decoding
-- [arXiv 2022] Fast Inference from Transformers via Speculative Decoding — https://arxiv.org/abs/2211.17192
-- [ICML 2023] Accelerating Large Language Model Decoding with Speculative Sampling — https://arxiv.org/abs/2302.01318
-- [ICML 2024] EAGLE: Speculative Sampling Requires Rethinking Feature Uncertainty — https://arxiv.org/abs/2401.15077 — code: https://github.com/SafeAILab/EAGLE
+### DynoPipe Lineage
+- **[ISCA 2026] DynoPipe: Heterogeneous Edge-Cloud LLM Serving with Dynamically Orchestrated Pipeline Boundaries**  
+  DOI: https://doi.org/10.1109/ISCA66397.2026.00077
+- **[EuroSys 2026] FlexPipe: Adapting Dynamic LLM Serving Through Inflight Pipeline Refactoring in Fragmented Serverless Clusters**  
+  Paper: https://arxiv.org/abs/2510.11938
+- **[SIGCOMM 2026] Connex: Endpoint Mobility Primitives for Dynamic LLM Serving**  
+  Author page: https://yanyinglin.github.io/publications/
 
-### Self-Speculative Decoding
-- [ISCA 2026] Cassandra: Enabling Reasoning LLMs at Edge via Self-Speculative Decoding — https://arxiv.org/abs/2605.26558
+### Direct Dynamic Partitioning Competitors
+- **[WcCST 2026] DynaSplit: Latency-Aware Dynamic Model Partitioning for Large Language Model Inference in the Edge-Cloud Continuum**  
+  DOI: https://doi.org/10.1109/WCCST67302.2026.11496291
+- **[FITEE 2025] Adaptive Layer Splitting for Wireless Large Language Model Inference in Edge Computing: A Model-Based Reinforcement Learning Approach**  
+  DOI: https://doi.org/10.1631/FITEE.2400468
+- **[arXiv 2025] Splitwise: Collaborative Edge-Cloud Inference for LLMs via Lyapunov-Assisted DRL**  
+  Paper: https://arxiv.org/abs/2512.23310
+- **[arXiv 2025] Memory- and Latency-Constrained Inference of Large Language Models via Adaptive Split Computing**  
+  Paper: https://arxiv.org/abs/2511.04002
 
-### Adaptive Inference
-- TODO: add representative early-exit / dynamic-depth LLM papers.
+## P1 — Edge-Cloud LLM Serving / Orchestration
 
-## Model-Level
+- **[ICC 2025] Distributed Inference Optimization for Large Language Model in Edge-Cloud Collaborative Networks**  
+  DOI: https://doi.org/10.1109/ICC52391.2025.11160773
+- **[Electronics 2025] DAPO: Mobility-Aware Joint Optimization of Model Partitioning and Task Offloading for Edge LLM Inference**  
+  DOI: https://doi.org/10.3390/electronics14193929
+- **[ACL 2026] EdgeFormer: Latency-Aware Collaborative Multi-Head Attention of Transformer Inference in Edge Networks**  
+  Paper: https://aclanthology.org/2026.acl-long.2007/
+- **[ICDCS 2026] TurboInfer: Targeting Age of Model Inference Optimization for Joint Model Inference in Edge Cloud Systems**  
+  DOI: https://doi.org/10.1109/2575-8411.2026.00030
+- **[arXiv 2026] Efficient and Privacy Aware Edge Cloud Collaborative Inference for Large Language Models**  
+  Paper: https://arxiv.org/abs/2607.13093
 
-### Compression / Quantization
-- TODO: add edge-relevant LLM quantization and pruning papers.
+## P1 — State / KV Migration
 
-### KV Cache / Memory
-- TODO: add PagedAttention/vLLM, KV compression, KV placement, long-context memory papers most relevant to edge deployment.
+- **[ICDCS 2026] Efficient KV Cache Migration for Geo-Distributed LLM Inference in Collaborative Edge Computing**  
+  DOI: https://doi.org/10.1109/2575-8411.2026.00033
 
-### Mixture-of-Experts
-- [ISCA 2026] SMoE: An Algorithm-System Co-Design for Pushing MoE to the Edge via Expert Substitution — https://arxiv.org/abs/2508.18983
-- TODO: add expert offloading, caching, and placement papers.
+This paper is especially relevant to DynoPipe because dynamic boundary or endpoint movement is only practical if inference state can migrate cheaply.
 
-## System-Level
+## P2 — Background for Split Inference / Edge-Cloud Partitioning
 
-### Edge-Cloud Collaborative Inference
-- [ISCA 2026] DynoPipe: Heterogeneous Edge-Cloud LLM Serving with Dynamically Orchestrated Pipeline Boundaries
+- **[Survey 2025] A Survey on Deep Learning in Edge-Cloud Collaboration: Model Partitioning, Privacy Preservation, and Prospects**
+- **[MobiCom 2024] FlexNN: Efficient and Adaptive DNN Inference on Memory-Constrained Edge Devices**  
+  DOI: https://doi.org/10.1145/3636534.3649391
+- **[JOCN 2025] Joint Optimization of DNN Model Partitioning and Slice Delivery for Distributed Edge-Cloud Inference over Optical Networks**
+- **[JPDC 2026] Multi-Modal Model Partition Strategy for End-Edge Collaborative Inference**
 
-### Model Partitioning / Computation Offloading
-- [ISCA 2026] DynoPipe: Heterogeneous Edge-Cloud LLM Serving with Dynamically Orchestrated Pipeline Boundaries
-- TODO: add static and dynamic LLM partition/offload baselines.
+These are background only; they are not the main LLM research target.
 
-### Prefill / Decode Disaggregation
-- TODO: add phase-disaggregated LLM serving papers and edge-cloud variants.
+## Reading Priority
 
-### Pipeline / Runtime Scheduling
-- [ISCA 2026] DynoPipe: dynamic boundary orchestration.
-- TODO: add representative heterogeneous pipeline and runtime schedulers.
-
-### Hardware / Compiler / Runtime
-- [ISCA 2026] Cassandra
-- [ISCA 2026] SMoE
-- TODO: add mobile GPU/NPU, Jetson, TPU/Trainium, CUDA/MLIR runtime papers that materially affect edge inference.
-
-## Surveys / Collections
-
-- Awesome-PPML-Papers (organization reference): https://github.com/PKU-SEC-Lab/Awesome-PPML-Papers
-- TODO: add recent Edge LLM surveys and Edge-Cloud collaborative inference surveys.
-
-## Priority Queue
-
-### P0 — read deeply now
 1. DynoPipe
-2. Cassandra
-3. SMoE
+2. FlexPipe
+3. Connex
+4. DynaSplit
+5. Adaptive Layer Splitting for Wireless LLM Inference
+6. Efficient KV Cache Migration for Geo-Distributed LLM Inference
+7. Distributed Inference Optimization for LLM in Edge-Cloud Collaborative Networks
+8. Splitwise
+9. Adaptive Split Computing
+10. DAPO
+11. EdgeFormer
+12. TurboInfer
 
-### P1 — needed for the survey next
-1. Prefill/Decode disaggregation
-2. Distributed / edge-cloud speculative decoding
-3. Dynamic model partitioning and offloading
-4. KV-cache placement/migration
-5. Weak-network / mobile-edge LLM serving
+## Excluded on Purpose
 
-### P2 — background
-1. vLLM / PagedAttention
-2. continuous batching
-3. LLM serving schedulers
-4. edge quantization
-5. heterogeneous accelerator runtimes
+Do **not** add papers merely because they contain the word `edge`.
+
+Excluded unless directly tied to partition/orchestration:
+- generic speculative decoding / Cassandra
+- MoE expert substitution / SMoE
+- generic quantization and pruning
+- pure on-device inference
+- generic cloud LLM serving
+- compiler / kernel work with no direct edge-cloud placement implication
