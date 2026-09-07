@@ -1,74 +1,96 @@
-# Taxonomy
+# Taxonomy — DynoPipe Direction Only
 
-This repository classifies Edge-Cloud LLM papers by the **main bottleneck they attack**, not merely by keyword.
+This repository is intentionally narrow. A paper is included only when it directly studies **dynamic collaborative LLM inference across edge/cloud or closely related distributed edge resources**.
 
-## A. Algorithm-Level
-### A1. Speculative Decoding
-Draft/verify methods that reduce autoregressive decoding cost.
+## A. Dynamic Partitioning / Split Computing
 
-### A2. Self-Speculative Decoding
-Uses the target model itself, or a pruned/partial variant, as the draft mechanism.
+Include work that decides where to split the model under changing conditions.
 
-### A3. Adaptive Inference
-Early exit, dynamic depth, token-adaptive execution, or runtime-dependent inference paths.
+Typical decisions:
+- transformer layer / block split point
+- edge vs cloud placement
+- quantization level coupled with partitioning
+- tensor-parallel degree coupled with placement
+- split-point adaptation under bandwidth / RTT / compute / memory changes
 
-## B. Model-Level
-### B1. Compression
-Quantization, pruning, distillation, low-rank approximation.
+## B. Computation Offloading / Placement
 
-### B2. KV Cache / Memory
-Paged KV, KV compression, placement, eviction, migration, long-context memory control.
+Include work that dynamically decides which model stages, requests, or dependent models execute on edge vs cloud.
 
-### B3. MoE
-Expert placement, caching, offloading, substitution, routing, communication reduction.
+Typical state variables:
+- bandwidth
+- RTT / jitter
+- edge GPU utilization
+- memory pressure
+- request arrival rate
+- mobility
+- cloud queue / availability
 
-### B4. Small-Large Model Collaboration
-SLM/LLM cooperation beyond classic speculative decoding.
+## C. Dynamic Pipeline Orchestration
 
-## C. System-Level
-### C1. Edge-Cloud Collaborative Inference
-Systems where both edge and cloud participate in serving.
+Include work on:
+- pipeline construction
+- moving pipeline boundaries
+- inflight pipeline refactoring
+- topology-aware pipeline placement
+- compute/communication overlap
+- reconfiguration stability / hysteresis
 
-### C2. Model Partitioning / Computation Offloading
-Layer/operator/graph partitioning and dynamic offload decisions.
+## D. State / KV-Cache Migration
 
-### C3. Prefill / Decode Disaggregation
-Separates Prefill and Decode placement, scheduling, or resource pools.
+Include work on:
+- KV-cache migration
+- activation/state synchronization
+- migration vs recomputation
+- geo-distributed endpoint changes
+- state continuity during placement changes
 
-### C4. Pipeline / Runtime Scheduling
-Runtime orchestration, queueing, batching, placement, migration, and dynamic scheduling.
+## E. Realistic Edge-Cloud Networking
 
-### C5. Hardware / Compiler / Runtime
-GPU/NPU/TPU/Trainium-aware execution, kernels, compilers, runtimes, and heterogeneous execution stacks.
+Include work that evaluates or optimizes for:
+- WAN RTT
+- bandwidth fluctuation
+- jitter / packet loss
+- 4G / 5G / Wi-Fi
+- endpoint mobility
+- weak or intermittent connectivity
+- P95 / P99 tail latency
 
-## Cross-Cutting Tags
+## F. Closely Related Background
 
-Use these tags in notes when relevant:
+Generic DNN split inference or datacenter pipeline-serving work may be kept only if it contributes a mechanism directly reusable for DynoPipe-style research. It must be labeled `background`, not `core`.
 
+## Exclusion Rule
+
+Exclude papers whose main contribution is only:
+- speculative decoding
+- self-speculative decoding
+- MoE expert substitution / caching
+- quantization / pruning / distillation
+- on-device-only LLM inference
+- generic compiler / kernel optimization
+- generic datacenter serving
+
+unless the paper directly contributes to **edge-cloud partitioning, orchestration, state migration, or WAN-aware serving**.
+
+## Tags
+
+Use only focused tags:
+
+- `dynamic-partition`
+- `split-inference`
 - `edge-cloud`
+- `offloading`
+- `pipeline-boundary`
+- `dynamic-pipeline`
+- `runtime-orchestration`
+- `kv-migration`
+- `state-migration`
+- `wan`
 - `weak-network`
+- `mobility`
 - `prefill`
 - `decode`
-- `wan`
-- `kv-cache`
-- `speculative-decoding`
-- `moe`
-- `dynamic-scheduling`
-- `model-partition`
-- `offloading`
-- `heterogeneous-hardware`
-- `energy`
-- `privacy`
-- `mobile-edge`
-- `robotics`
-
-## Inclusion Rule
-
-A paper should be included if it contributes materially to at least one of:
-
-1. efficient on-device LLM inference;
-2. edge-cloud collaborative LLM serving;
-3. inference techniques directly reusable in edge-cloud systems;
-4. hardware/runtime mechanisms that materially change edge deployment feasibility.
-
-Generic datacenter-only papers may still be included when they provide a directly reusable serving mechanism, but should be clearly labeled as background rather than edge-native work.
+- `tail-latency`
+- `heterogeneous-resources`
+- `background`
