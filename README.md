@@ -1,119 +1,91 @@
-# Awesome DynoPipe-Style Edge-Cloud LLM Papers
+# Awesome DynoPipe-Direction Papers
 
-A focused literature repository for the **DynoPipe research direction**: dynamic edge-cloud LLM serving, model partitioning, computation offloading, pipeline-boundary adaptation, runtime orchestration, and state migration under heterogeneous and time-varying network/compute resources.
+A strictly curated literature repository for the **DynoPipe research direction**: dynamic LLM serving across heterogeneous compute and network resources, with emphasis on **model partitioning, computation offloading, prefill/decode placement, pipeline orchestration, runtime scheduling, KV/state movement, and WAN/network sensitivity**.
 
-> **Scope rule:** this repo does **not** collect generic Edge LLM papers. Pure on-device quantization, MoE, speculative decoding, and unrelated hardware/compiler papers are excluded unless they directly solve an edge-cloud partitioning / orchestration problem.
+## Venue Policy
 
-## Core Research Question
+This repository now uses a **strict computer-architecture top-venue whitelist**:
 
-> How should an LLM be dynamically partitioned and orchestrated across edge and cloud when bandwidth, RTT, edge compute, memory, workload, and endpoint location change over time?
+- **ISCA** — International Symposium on Computer Architecture
+- **MICRO** — IEEE/ACM International Symposium on Microarchitecture
+- **HPCA** — IEEE International Symposium on High Performance Computer Architecture
+- **ASPLOS** — Architectural Support for Programming Languages and Operating Systems
 
-The main baseline is **DynoPipe (ISCA 2026)**. A particularly important open question is whether a single Edge→Cloud pipeline boundary makes autoregressive Decode overly dependent on WAN communication.
+Papers from OSDI, NSDI, EuroSys, SIGCOMM, MLSys, arXiv-only venues, IEEE Access, IoT journals, etc. are **not included in the main list**, even when technically relevant. They may be kept separately later as background, but not mixed into the core bibliography.
 
-## Research Map
+## Scope
 
-### A. Dynamic Edge-Cloud Model Partitioning
-- dynamic split-point selection
-- layer / block placement
-- computation offloading
-- network-aware and mobility-aware partitioning
-- joint partition + quantization / resource allocation
+A paper is included only if it materially helps answer at least one of these questions:
 
-### B. Edge-Cloud LLM Serving & Resource Orchestration
-- heterogeneous edge-cloud serving
-- workload-aware orchestration
-- SLO-aware placement
-- endpoint mobility
-- multi-model / multi-node deployment
+1. Where should LLM computation run under heterogeneous compute/network conditions?
+2. How should a model or inference phase be partitioned across resources?
+3. How should runtime orchestration adapt to changing load, bandwidth, latency, or memory pressure?
+4. How should Prefill and Decode be separated, overlapped, or migrated?
+5. How can KV-cache / inference state be moved or managed cheaply enough to support dynamic placement?
+6. How realistic is edge-side execution when compared with datacenter-class assumptions?
 
-### C. Dynamic Pipeline Refactoring
-- pipeline construction
-- pipeline-boundary movement
-- inflight reconfiguration
-- computation/communication overlap
+## Must-Read Core
 
-### D. State & KV-Cache Migration
-- KV-cache placement and migration
-- state synchronization
-- migration-vs-recomputation trade-offs
-- geo-distributed serving
+1. **[ISCA 2026] DynoPipe: Heterogeneous Edge-Cloud LLM Serving with Dynamically Orchestrated Pipeline Boundaries**  
+   Core target paper. Dynamic Edge→Cloud split point under changing bandwidth/compute/memory conditions.
 
-### E. Weak-Network / Realistic Edge Evaluation
-- WAN RTT / bandwidth / jitter
-- 4G / 5G / Wi-Fi traces
-- tail latency
-- edge mobility
-- degraded / intermittent connectivity
+2. **[ISCA 2024] Splitwise: Efficient Generative LLM Inference Using Phase Splitting**  
+   Separates prompt computation and token generation onto different machines; foundational for thinking about Prefill/Decode-aware placement.
 
-## P0 — Must Read
+3. **[ASPLOS 2025] Helix: Serving Large Language Models over Heterogeneous GPUs and Network via Max-Flow**  
+   Jointly models heterogeneous GPUs and network links; optimizes model placement and scheduling using a graph/max-flow formulation.
 
-1. **[ISCA 2026] DynoPipe: Heterogeneous Edge-Cloud LLM Serving with Dynamically Orchestrated Pipeline Boundaries** — main baseline.
-2. **[EuroSys 2026] FlexPipe: Adapting Dynamic LLM Serving Through Inflight Pipeline Refactoring in Fragmented Serverless Clusters** — same research lineage; dynamic pipeline refactoring.
-3. **[SIGCOMM 2026] Connex: Endpoint Mobility Primitives for Dynamic LLM Serving** — same research lineage; mobility/network dimension of dynamic serving.
-4. **[WcCST 2026] DynaSplit: Latency-Aware Dynamic Model Partitioning for Large Language Model Inference in the Edge-Cloud Continuum** — direct dynamic partitioning competitor.
-5. **[FITEE 2025] Adaptive Layer Splitting for Wireless Large Language Model Inference in Edge Computing: A Model-Based Reinforcement Learning Approach** — wireless/network-aware LLM split inference.
-6. **[ICDCS 2026] Efficient KV Cache Migration for Geo-Distributed LLM Inference in Collaborative Edge Computing** — state migration, directly relevant to boundary movement.
+4. **[ISCA 2026] Tetris: Efficient Long-context LLM Serving with Chunkwise Dynamic Sequence Parallelism**  
+   Dynamically changes parallelism at fine granularity under varying workloads; useful for understanding runtime adaptation beyond a fixed split point.
 
-## P1 — Directly Relevant
+5. **[ASPLOS 2026] TPLA: Tensor Parallel Latent Attention for Efficient Disaggregated Prefill & Decode Inference**  
+   Directly relevant to disaggregated Prefill/Decode execution and cross-resource communication.
 
-- **[ICC 2025] Distributed Inference Optimization for Large Language Model in Edge-Cloud Collaborative Networks**
-- **[arXiv 2025] Memory- and Latency-Constrained Inference of Large Language Models via Adaptive Split Computing**
-- **[arXiv 2025] Splitwise: Collaborative Edge-Cloud Inference for LLMs via Lyapunov-Assisted DRL**
-- **[Electronics 2025] DAPO: Mobility-Aware Joint Optimization of Model Partitioning and Task Offloading for Edge LLM Inference**
-- **[ACL 2026] EdgeFormer: Latency-Aware Collaborative Multi-Head Attention of Transformer Inference in Edge Networks**
-- **[ICDCS 2026] TurboInfer: Targeting Age of Model Inference Optimization for Joint Model Inference in Edge Cloud Systems**
-- **[arXiv 2026] Efficient and Privacy Aware Edge Cloud Collaborative Inference for Large Language Models**
+6. **[ASPLOS 2026] Towards High-Goodput LLM Serving with Prefill-decode Multiplexing**  
+   Dynamically multiplexes Prefill and Decode resources and directly addresses the phase-allocation problem.
 
-See [`PAPERS.md`](PAPERS.md) for links and classification.
+7. **[ASPLOS 2025] POD-Attention: Unlocking Full Prefill-Decode Overlap for Faster LLM Inference**  
+   Shows why Prefill and Decode have different bottlenecks and how their overlap can be exploited at the kernel/resource level.
 
-## Explicitly Out of Scope
+8. **[ASPLOS 2025] Past-Future Scheduler for LLM Serving under SLA Guarantees**  
+   Dynamic scheduling under changing request conditions and latency constraints.
 
-The following are **not core papers for this repo** unless they directly connect to edge-cloud partition/orchestration:
+9. **[ASPLOS 2026] QoServe: Breaking the Silos of LLM Inference Serving**  
+   SLO-aware dynamic scheduling across heterogeneous request classes.
 
-- Cassandra / generic self-speculative decoding
-- SMoE / generic expert substitution
-- generic LLM quantization/pruning
-- generic on-device-only LLM inference
-- datacenter-only serving papers with no transferable partition/orchestration mechanism
+10. **[MICRO 2025] Kelle: Co-design KV Caching and eDRAM for Efficient LLM Serving in Edge Computing**  
+    Important edge-side memory/KV reference for judging whether Decode can realistically stay local.
 
-## Repository Structure
+## Why This Set Matters for DynoPipe
+
+The core research line is not generic "edge LLM". It is:
 
 ```text
-.
-├── README.md
-├── PAPERS.md
-├── TAXONOMY.md
-├── notes/
-│   ├── TEMPLATE.md
-│   └── DynoPipe.md
-├── surveys/
-│   └── README.md
-├── experiments/
-│   └── README.md
-└── research-gaps/
-    └── README.md
+heterogeneous resources
+        ↓
+model / phase placement
+        ↓
+network + compute + memory bottlenecks
+        ↓
+dynamic runtime adaptation
+        ↓
+state / KV movement
+        ↓
+TTFT / TPOT / throughput / tail latency
 ```
 
-## Reading-Note Standard
+The current working hypothesis is that **single-boundary Edge→Cloud partitioning may remain too WAN-dependent during autoregressive Decode**, so papers on Prefill/Decode disaggregation, heterogeneous placement, dynamic scheduling, and KV-state management are especially important.
 
-For every important paper, record:
+## Repository Files
 
-**Problem | Split / Placement Decision | Online State | Optimization Method | Edge Hardware | Cloud Hardware | Network | Prefill/Decode Behavior | KV/State Handling | Metrics | Baselines | Main Results | Limitations | Relation to DynoPipe | Reproduction Status | Research Gap**
+- [`PAPERS.md`](PAPERS.md) — strict top-venue paper index with relevance labels
+- [`TAXONOMY.md`](TAXONOMY.md) — DynoPipe-specific classification rules
+- [`notes/DynoPipe.md`](notes/DynoPipe.md) — current core reading note
+- [`research-gaps/README.md`](research-gaps/README.md) — testable hypotheses
+- [`experiments/README.md`](experiments/README.md) — future reproduction/evaluation plan
 
-## Metrics We Care About
+## Current Reading Order
 
-- TTFT
-- TPOT
-- end-to-end latency
-- P95 / P99 tail latency
-- throughput
-- edge memory footprint
-- activation / KV communication volume
-- WAN interactions per request / generated token
-- migration overhead
-- bandwidth / RTT sensitivity
-- robustness under jitter / mobility / weak network
+**DynoPipe → Splitwise → Helix → Tetris → TPLA → Prefill-decode Multiplexing → POD-Attention → Past-Future Scheduler → QoServe → Kelle**
 
-## Current Hypothesis to Verify
-
-DynoPipe constrains each request to a single Edge→Cloud split point. For autoregressive generation, this may place WAN communication repeatedly on the Decode critical path. The repository will treat this as a **testable hypothesis**, not a conclusion, and prioritize papers and experiments that can confirm, refine, or refute it.
+This order moves from the exact target paper to the closest architectural mechanisms needed to critique and extend it.
