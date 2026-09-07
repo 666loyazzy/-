@@ -1,81 +1,89 @@
-# Research Gaps and Testable Hypotheses
+# Research Gaps and Testable Hypotheses — DynoPipe Direction
 
-This file records **questions to test**, not claims to present as established facts.
+This file records **questions to test**, not established claims.
 
 ## G1. Decode-Critical WAN Dependence
 
-**Hypothesis:** In single-boundary Edge→Cloud layer partitioning, autoregressive Decode may keep WAN transfer on the critical path for each generated token, making performance highly sensitive to RTT and jitter.
-
-### Why it matters
-Optimizing transferred bytes alone may be insufficient if the number and timing of WAN interactions dominate TPOT.
+**Hypothesis:** In single-boundary Edge→Cloud layer partitioning, autoregressive Decode may keep WAN transfer on the critical path for each generated token, making TPOT highly sensitive to RTT and jitter.
 
 ### Experiments
 - Sweep RTT: 1 / 5 / 10 / 20 / 50 / 100 ms.
 - Sweep bandwidth independently.
 - Add jitter and packet loss.
-- Compare TTFT, TPOT, P99, throughput, and WAN interactions per token.
-- Compare static split, dynamic split, edge-only, cloud-only, and phase-aware alternatives.
+- Compare TTFT, TPOT, P99, throughput, communication volume, and WAN interactions per token.
+- Compare edge-only, cloud-only, static split, and dynamic split.
 
-## G2. Prefill and Decode May Need Different Placement
+## G2. Prefill and Decode May Need Different Split Policies
 
-**Hypothesis:** A placement that is good for Prefill may be poor for Decode because the two phases have different compute, memory, parallelism, and latency characteristics.
+**Hypothesis:** A split point that is good for Prefill may be poor for Decode because the two phases have different compute, memory, parallelism, and latency characteristics.
 
-### Candidate direction
-Phase-aware scheduling:
-- Prefill: edge-cloud collaboration or cloud-heavy execution.
-- Decode: edge-local or selectively cloud-assisted execution.
+### Candidate experiment
+Compare one unified split policy against phase-aware split-point selection while keeping the same edge-cloud architecture.
 
-## G3. Realistic Edge Hardware Gap
+## G3. Communication Frequency vs Communication Volume
 
-**Question:** Do conclusions obtained on server-class edge GPUs hold on mobile/embedded platforms?
-
-### Candidate platforms
-- Jetson-class devices
-- laptop/mobile GPUs
-- NPUs
-- integrated GPUs
-
-## G4. Communication Frequency vs Communication Volume
-
-Most placement objectives focus strongly on bytes transferred. A latency-sensitive interactive LLM may also need to minimize:
-
-- number of cross-domain round trips;
+Current partition objectives often emphasize bytes transferred. Interactive LLM inference may also need to optimize:
+- number of cross-domain transfers;
 - synchronization frequency;
 - serialization/deserialization events;
-- state migration frequency.
+- RTT exposure per generated token.
+
+## G4. Boundary Migration Cost
+
+Dynamic split points are useful only if the cost of changing placement is lower than the expected benefit.
+
+Questions:
+- When should the system move a boundary?
+- Which state must migrate?
+- When is KV transfer better than recomputation?
+- Can migration overlap with ongoing inference?
+- How much hysteresis is required to avoid oscillation?
 
 ## G5. Weak-Network Robustness
 
-A practical edge system should degrade gracefully under:
+A practical DynoPipe-style system should degrade gracefully under:
 - bandwidth collapse;
 - high RTT;
 - jitter;
+- packet loss;
 - intermittent connectivity;
 - cloud overload.
 
-Potential metric: quality/latency under a network-availability envelope, not only a fixed benchmark link.
+## G6. Realistic Edge Hardware Gap
 
-## G6. Edge SLM + Cloud LLM Collaboration
+**Question:** Do conclusions obtained on server-class edge GPUs hold on mobile / embedded / lower-memory platforms?
 
-Instead of layer-splitting one LLM, use:
-- small local model for immediate generation;
-- cloud model for verification/correction/planning;
-- adaptive escalation only when needed.
+Candidate platforms:
+- Jetson-class devices
+- laptop GPUs
+- integrated GPUs / NPUs where feasible
 
-This may reduce WAN dependence while preserving access to a stronger cloud model.
+## G7. Mobility-Aware Placement
 
-## G7. KV-Cache Placement and Migration
+When the endpoint moves, bandwidth, RTT, and reachable edge resources can change together. Static or purely reactive split-point selection may lag behind these changes.
 
 Questions:
-- Which KV state should remain local?
-- When is migration more expensive than recomputation?
-- Can Decode-local KV state reduce cross-domain dependence?
-- How does long context change the optimal strategy?
+- Should future resource state be predicted?
+- How much benefit comes from proactive migration?
+- Can endpoint mobility and boundary migration be optimized jointly?
+
+## G8. Multi-Dimensional Objective
+
+A practical controller may need to jointly optimize:
+- TTFT
+- TPOT
+- P99 latency
+- throughput
+- edge memory
+- communication volume
+- migration overhead
+
+A single throughput-oriented objective may not capture interactive edge workloads.
 
 ## Decision Rule
 
-A gap graduates into an experiment only when:
-1. at least several related papers have been checked;
-2. the gap is not already solved by prior work;
-3. there is a measurable hypothesis;
-4. there is a realistic baseline and evaluation plan.
+A gap becomes an experiment only when:
+1. related DynoPipe-direction papers have been checked;
+2. the issue is not already solved by prior work;
+3. the hypothesis is measurable;
+4. a realistic baseline and network setup exist.
