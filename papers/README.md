@@ -1,32 +1,27 @@
-# Paper PDFs
+# PDF provenance and verification
 
-This directory separates publicly accessible source PDFs from Chinese in-layout translations.
+下载日期：2026-09-08。原文只使用作者/项目主页或 arXiv 官方文件。
 
-- `original/`: author-hosted or preprint PDFs used for reading and translation.
-- `translated/`: Chinese in-layout PDFs produced from the corresponding source files.
-- Translation index: [17 translated papers, each in Chinese-only and bilingual editions](./translated/README.md).
+| Paper | Source | Original pages | Chinese pages | Dual pages |
+|---|---|---:|---:|---:|
+| KISS-ICP | [University of Bonn author PDF](https://www.ipb.uni-bonn.de/pdfs/vizzo2023ral.pdf) | 8 | 8 | 16 |
+| ORB-SLAM2 | [arXiv:1610.06475](https://arxiv.org/abs/1610.06475) | 9 | 8 | 16 |
+| SLAM Robust-Perception survey | [University of Zurich author PDF](https://rpg.ifi.uzh.ch/docs/TRO16_cadena.pdf) | 24 | 24 | 48 |
 
-## Source status
+双语版采用“英文原页 + 中文译页”逐页配对，因此页数是译文正文的两倍。ORB-SLAM2 原文第 1 页为版权封面，译文略去该页。
 
-| # | Final paper name | Local source PDF | Public source | Note |
-|---:|---|---|---|---|
-| 1 | DynoPipe | `original/DynoPipe_ISCA26.pdf` | [Author page](https://yanyinglin.github.io/publications/) | ISCA 2026 paper supplied in the project workspace. |
-| 2 | Splitwise | `original/Splitwise_ISCA24_arXiv2311.18677v2.pdf` | [arXiv:2311.18677](https://arxiv.org/abs/2311.18677) | Public preprint. |
-| 3 | Helix | `original/Helix_ASPLOS25_arXiv2406.01566v2.pdf` | [arXiv:2406.01566](https://arxiv.org/abs/2406.01566) | Public preprint. |
-| 4 | Tetris | Not included | [Withdrawn arXiv:2511.06247](https://arxiv.org/abs/2511.06247) | The authors withdrew the preprint; arXiv no longer offers a PDF. |
-| 5 | TPLA | `original/TPLA_ASPLOS26_arXiv2508.15881v2.pdf` | [arXiv:2508.15881](https://arxiv.org/abs/2508.15881) | Public preprint. |
-| 6 | Prefill-decode Multiplexing / MuxWise | `original/MuxWise_ASPLOS26_arXiv2504.14489v3.pdf` | [arXiv:2504.14489](https://arxiv.org/abs/2504.14489) | Public preprint. |
-| 7 | Past-Future Scheduler | `original/Past-Future-Scheduler_ASPLOS25_arXiv2507.10150v1.pdf` | [arXiv:2507.10150](https://arxiv.org/abs/2507.10150) | Public preprint. |
-| 8 | QoServe | `original/QoServe_ASPLOS26_preprint-Niyama-arXiv2503.22562v1.pdf` | [arXiv:2503.22562](https://arxiv.org/abs/2503.22562) | Earlier preprint title: *Niyama: Breaking the Silos of LLM Inference Serving*. |
-| 9 | Shift Parallelism | `original/Shift-Parallelism_ASPLOS26_arXiv2509.16495v2.pdf` | [arXiv:2509.16495](https://arxiv.org/abs/2509.16495) | Public preprint. |
-| 10 | XY-Serve | `original/XY-Serve_ASPLOS26_preprint-arXiv2412.18106v1.pdf` | [arXiv:2412.18106](https://arxiv.org/abs/2412.18106) | Earlier preprint title: *Tackling the Dynamicity in a Production LLM Serving System...*. |
-| 11 | Bullet | `original/Bullet_ASPLOS26_arXiv2504.19516v4.pdf` | [arXiv:2504.19516](https://arxiv.org/abs/2504.19516) | Earlier PDF title differs slightly from the final ASPLOS title. |
-| 12 | DynamoLLM | `original/DynamoLLM_HPCA25_arXiv2408.00741v1.pdf` | [arXiv:2408.00741](https://arxiv.org/abs/2408.00741) | Public preprint. |
-| 13 | POD-Attention | `original/POD-Attention_ASPLOS25_arXiv2410.18038v2.pdf` | [arXiv:2410.18038](https://arxiv.org/abs/2410.18038) | Public preprint. |
-| 14 | SwiftSpec | `original/SwiftSpec_ASPLOS26_arXiv2506.11309v1.pdf` | [arXiv:2506.11309](https://arxiv.org/abs/2506.11309) | Earlier preprint subtitle differs from the final ASPLOS title. |
-| 15 | vAttention | `original/vAttention_ASPLOS25_arXiv2405.04437v3.pdf` | [arXiv:2405.04437](https://arxiv.org/abs/2405.04437) | Public preprint. |
-| 16 | AQUA | `original/AQUA_ASPLOS25_arXiv2407.21255v3.pdf` | [arXiv:2407.21255](https://arxiv.org/abs/2407.21255) | Public preprint. |
-| 17 | Kelle | `original/Kelle_MICRO25_arXiv2510.16040v1.pdf` | [arXiv:2510.16040](https://arxiv.org/abs/2510.16040) | Public preprint. |
-| 18 | llm.npu | `original/llm.npu_ASPLOS25_arXiv2407.05858v2.pdf` | [arXiv:2407.05858](https://arxiv.org/abs/2407.05858) | Public preprint. |
+## SHA-256
 
-The repository records provenance for research use. Copyright remains with the respective authors and publishers; consult each source page and PDF for its applicable license before redistributing derivatives.
+```text
+ac348e4cb4716bf46b2f1244fc87c75e190f693f31ff18104e093c83176215a1  original/KISS-ICP_RAL2023.pdf
+2b94552a20378d6dfbe863ba7317d4a86874fe54e43ca8b918abefcbdc64ce24  original/ORB-SLAM2_TRO2017_arXiv1610.06475v1.pdf
+5578c68450705ce190c9610e02abe7ba55a8d392eeddd34057213409238910ce  original/SLAM-Robust-Perception_TRO2016.pdf
+babe8b1dfc4aedfa0b0b07ec240bd2dedf8eb4baaf75084cf83d70a7234fc517  translated/KISS-ICP_RAL2023-mono.pdf
+f2253bc8a92159cd4c144558258ca038740cb7f6ed2f79b61c69eb9fe48632c5  translated/KISS-ICP_RAL2023-dual.pdf
+8762b63fd2ace01a5201e6309405c61f2407118068e64eeb4e58defe0668f1c0  translated/ORB-SLAM2_TRO2017_arXiv1610.06475v1-mono.pdf
+74bec030d07ce9df11a8b81ea67f41304fc42c2a409e5167244374d34f10494d  translated/ORB-SLAM2_TRO2017_arXiv1610.06475v1-dual.pdf
+a29b8c147df8ce41504dac6dc97883a0cfee8999ed9cc8f7f56589b7e3893efd  translated/SLAM-Robust-Perception_TRO2016-mono.pdf
+caeaef144600a6ff0166b4ec4bb69c16dd099f45339c89b19135ff61abad6630  translated/SLAM-Robust-Perception_TRO2016-dual.pdf
+```
+
+翻译工具：PDFMathTranslate (`pdf2zh v1.9.11`)，`en -> zh`，Google 翻译服务。所有译文均核对 PDF 可打开性、页数，并完成逐页缩略图检查。
