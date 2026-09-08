@@ -2,6 +2,11 @@
 
 A strictly curated literature repository for the **DynoPipe research direction**: dynamic LLM serving across heterogeneous compute and network resources, with emphasis on **model partitioning, computation offloading, prefill/decode placement, pipeline orchestration, runtime scheduling, KV/state movement, and WAN/network sensitivity**.
 
+## Repository Branches
+
+- [`edge-cloud-papers`](https://github.com/666loyazzy/-/tree/edge-cloud-papers) - DynoPipe / 边云协同论文库
+- [`robotics-papers`](https://github.com/666loyazzy/-/tree/robotics-papers) - 机器人与 SLAM 论文库（官方原文、中文译文、双语版与 BibTeX）
+
 ## Venue Policy
 
 This repository now uses a **strict computer-architecture top-venue whitelist**:
