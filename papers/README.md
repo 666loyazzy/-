@@ -4,6 +4,7 @@ This directory separates publicly accessible source PDFs from Chinese in-layout 
 
 - `original/`: author-hosted or preprint PDFs used for reading and translation.
 - `translated/`: Chinese in-layout PDFs produced from the corresponding source files.
+- Translation index: [17 translated papers, each in Chinese-only and bilingual editions](./translated/README.md).
 
 ## Source status
 
