@@ -1,97 +1,65 @@
-# Awesome DynoPipe-Direction Papers
+# AI Systems & Robotics Paper Library
 
-A strictly curated literature repository for the **DynoPipe research direction**: dynamic LLM serving across heterogeneous compute and network resources, with emphasis on **model partitioning, computation offloading, prefill/decode placement, pipeline orchestration, runtime scheduling, KV/state movement, and WAN/network sensitivity**.
+面向个人科研与课程学习的论文仓库，统一整理两个研究方向：
 
-## Repository Branches
+1. **边云协同与异构 LLM 推理系统**
+2. **机器人、定位与 SLAM**
 
-- [`edge-cloud-papers`](https://github.com/666loyazzy/-/tree/edge-cloud-papers) - DynoPipe / 边云协同论文库
-- [`robotics-papers`](https://github.com/666loyazzy/-/tree/robotics-papers) - 机器人与 SLAM 论文库（官方原文、中文译文、双语版与 BibTeX）
+`main` 只作为总入口和完整目录；各方向的论文原文、中文嵌字译文、双语版、引用和阅读笔记分别保存在对应分支中。
 
-## Venue Policy
+## 分支导航
 
-This repository now uses a **strict computer-architecture top-venue whitelist**:
+| 分支 | 研究方向 | 清单规模 | PDF / 翻译状态 |
+|---|---|---:|---|
+| [`edge-cloud-papers`](https://github.com/666loyazzy/-/tree/edge-cloud-papers) | DynoPipe、模型切分、Prefill/Decode、异构调度、KV/状态迁移、端侧推理 | 18 篇 | 17 篇已有原文及中英译文；Tetris 预印本已撤回，暂只保留文献记录 |
+| [`robotics-papers`](https://github.com/666loyazzy/-/tree/robotics-papers) | 激光里程计、ICP、视觉 SLAM、SLAM 知识框架 | 3 篇 | 3 篇均有官方原文、纯中文嵌字版、中英双语版、BibTeX 与阅读笔记 |
 
-- **ISCA** — International Symposium on Computer Architecture
-- **MICRO** — IEEE/ACM International Symposium on Microarchitecture
-- **HPCA** — IEEE International Symposium on High Performance Computer Architecture
-- **ASPLOS** — Architectural Support for Programming Languages and Operating Systems
+当前总目录共 **21 篇不重复论文**。
 
-Papers from OSDI, NSDI, EuroSys, SIGCOMM, MLSys, arXiv-only venues, IEEE Access, IoT journals, etc. are **not included in the main list**, even when technically relevant. They may be kept separately later as background, but not mixed into the core bibliography.
+## 完整论文清单
 
-## Scope
+### A. 边云协同与异构 LLM 推理（18 篇）
 
-A paper is included only if it materially helps answer at least one of these questions:
+| # | 年份 / 会议 | 论文 |
+|---:|---|---|
+| 1 | ISCA 2026 | DynoPipe: Heterogeneous Edge-Cloud LLM Serving with Dynamically Orchestrated Pipeline Boundaries |
+| 2 | ISCA 2024 | Splitwise: Efficient Generative LLM Inference Using Phase Splitting |
+| 3 | ASPLOS 2025 | Helix: Serving Large Language Models over Heterogeneous GPUs and Network via Max-Flow |
+| 4 | ISCA 2026 | Tetris: Efficient Long-context LLM Serving with Chunkwise Dynamic Sequence Parallelism |
+| 5 | ASPLOS 2026 | TPLA: Tensor Parallel Latent Attention for Efficient Disaggregated Prefill & Decode Inference |
+| 6 | ASPLOS 2026 | Towards High-Goodput LLM Serving with Prefill-decode Multiplexing |
+| 7 | ASPLOS 2025 | Past-Future Scheduler for LLM Serving under SLA Guarantees |
+| 8 | ASPLOS 2026 | QoServe: Breaking the Silos of LLM Inference Serving |
+| 9 | ASPLOS 2026 | Shift Parallelism: Low-Latency, High-Throughput LLM Inference for Dynamic Workloads |
+| 10 | ASPLOS 2026 | XY-Serve: End-to-End Versatile Production Serving for Dynamic LLM Workloads |
+| 11 | ASPLOS 2026 | Boosting GPU Utilization for LLM Serving via Dynamic Spatial-Temporal Orchestration |
+| 12 | HPCA 2025 | DynamoLLM: Designing LLM Inference Clusters for Performance and Energy Efficiency |
+| 13 | ASPLOS 2025 | POD-Attention: Unlocking Full Prefill-Decode Overlap for Faster LLM Inference |
+| 14 | ASPLOS 2026 | SwiftSpec: Disaggregated Speculative Decoding and Fused Kernels for Low-Latency LLM Inference |
+| 15 | ASPLOS 2025 | vAttention: Dynamic Memory Management for Serving LLMs without PagedAttention |
+| 16 | ASPLOS 2025 | AQUA: Network-Accelerated Memory Offloading for LLMs in Scale-Up GPU Domains |
+| 17 | MICRO 2025 | Kelle: Co-design KV Caching and eDRAM for Efficient LLM Serving in Edge Computing |
+| 18 | ASPLOS 2025 | Fast On-device LLM Inference with NPUs (llm.npu) |
 
-1. Where should LLM computation run under heterogeneous compute/network conditions?
-2. How should a model or inference phase be partitioned across resources?
-3. How should runtime orchestration adapt to changing load, bandwidth, latency, or memory pressure?
-4. How should Prefill and Decode be separated, overlapped, or migrated?
-5. How can KV-cache / inference state be moved or managed cheaply enough to support dynamic placement?
-6. How realistic is edge-side execution when compared with datacenter-class assumptions?
+[查看边云协同详细索引、原文与译文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/PAPERS.md)
 
-## Must-Read Core
+### B. 机器人与 SLAM（3 篇）
 
-1. **[ISCA 2026] DynoPipe: Heterogeneous Edge-Cloud LLM Serving with Dynamically Orchestrated Pipeline Boundaries**  
-   Core target paper. Dynamic Edge→Cloud split point under changing bandwidth/compute/memory conditions.
+| # | 主题 | 年份 | 论文 |
+|---:|---|---:|---|
+| 1 | 激光里程计与 ICP 配准 | 2023 | KISS-ICP: In Defense of Point-to-Point ICP — Simple, Accurate, and Robust Registration If Done the Right Way |
+| 2 | 视觉 SLAM 系统 | 2017 | ORB-SLAM2: an Open-Source SLAM System for Monocular, Stereo and RGB-D Cameras |
+| 3 | SLAM 整体知识框架 | 2016 | Past, Present, and Future of Simultaneous Localization and Mapping: Towards the Robust-Perception Age |
 
-2. **[ISCA 2024] Splitwise: Efficient Generative LLM Inference Using Phase Splitting**  
-   Separates prompt computation and token generation onto different machines; foundational for thinking about Prefill/Decode-aware placement.
+[查看机器人论文详细索引、官方原文、中文译文与阅读笔记](https://github.com/666loyazzy/-/blob/robotics-papers/PAPERS.md)
 
-3. **[ASPLOS 2025] Helix: Serving Large Language Models over Heterogeneous GPUs and Network via Max-Flow**  
-   Jointly models heterogeneous GPUs and network links; optimizes model placement and scheduling using a graph/max-flow formulation.
+## 仓库组织原则
 
-4. **[ISCA 2026] Tetris: Efficient Long-context LLM Serving with Chunkwise Dynamic Sequence Parallelism**  
-   Dynamically changes parallelism at fine granularity under varying workloads; useful for understanding runtime adaptation beyond a fixed split point.
+- `main`：总介绍、跨分支完整论文清单与状态汇总。
+- `edge-cloud-papers`：边云协同方向的原文、译文、引用、分类、阅读笔记和研究缺口。
+- `robotics-papers`：机器人方向的原文、译文、引用与入门阅读路线。
+- 原文优先使用作者主页、会议页面或 arXiv 等公开来源。
+- PDF 翻译使用 PDFMathTranslate / pdf2zh，尽量保留公式、图表和论文布局。
+- PDF 著作权归原作者及出版机构所有，仓库内容仅用于个人学习与学术研究。
 
-5. **[ASPLOS 2026] TPLA: Tensor Parallel Latent Attention for Efficient Disaggregated Prefill & Decode Inference**  
-   Directly relevant to disaggregated Prefill/Decode execution and cross-resource communication.
-
-6. **[ASPLOS 2026] Towards High-Goodput LLM Serving with Prefill-decode Multiplexing**  
-   Dynamically multiplexes Prefill and Decode resources and directly addresses the phase-allocation problem.
-
-7. **[ASPLOS 2025] POD-Attention: Unlocking Full Prefill-Decode Overlap for Faster LLM Inference**  
-   Shows why Prefill and Decode have different bottlenecks and how their overlap can be exploited at the kernel/resource level.
-
-8. **[ASPLOS 2025] Past-Future Scheduler for LLM Serving under SLA Guarantees**  
-   Dynamic scheduling under changing request conditions and latency constraints.
-
-9. **[ASPLOS 2026] QoServe: Breaking the Silos of LLM Inference Serving**  
-   SLO-aware dynamic scheduling across heterogeneous request classes.
-
-10. **[MICRO 2025] Kelle: Co-design KV Caching and eDRAM for Efficient LLM Serving in Edge Computing**  
-    Important edge-side memory/KV reference for judging whether Decode can realistically stay local.
-
-## Why This Set Matters for DynoPipe
-
-The core research line is not generic "edge LLM". It is:
-
-```text
-heterogeneous resources
-        ↓
-model / phase placement
-        ↓
-network + compute + memory bottlenecks
-        ↓
-dynamic runtime adaptation
-        ↓
-state / KV movement
-        ↓
-TTFT / TPOT / throughput / tail latency
-```
-
-The current working hypothesis is that **single-boundary Edge→Cloud partitioning may remain too WAN-dependent during autoregressive Decode**, so papers on Prefill/Decode disaggregation, heterogeneous placement, dynamic scheduling, and KV-state management are especially important.
-
-## Repository Files
-
-- [`PAPERS.md`](PAPERS.md) — strict top-venue paper index with relevance labels
-- [`papers/README.md`](papers/README.md) — source PDFs, provenance, and translation status
-- [`TAXONOMY.md`](TAXONOMY.md) — DynoPipe-specific classification rules
-- [`notes/DynoPipe.md`](notes/DynoPipe.md) — current core reading note
-- [`research-gaps/README.md`](research-gaps/README.md) — testable hypotheses
-- [`experiments/README.md`](experiments/README.md) — future reproduction/evaluation plan
-
-## Current Reading Order
-
-**DynoPipe → Splitwise → Helix → Tetris → TPLA → Prefill-decode Multiplexing → POD-Attention → Past-Future Scheduler → QoServe → Kelle**
-
-This order moves from the exact target paper to the closest architectural mechanisms needed to critique and extend it.
+更详细的跨分支状态请见 [PAPERS.md](PAPERS.md)。
