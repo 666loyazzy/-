@@ -1,16 +1,15 @@
 # Paper PDFs
 
-This directory separates publicly accessible source PDFs from Chinese in-layout translations.
+This directory contains background LLM-systems PDFs moved out of the strict edge–cloud collection.
 
 - `original/`: author-hosted or preprint PDFs used for reading and translation.
 - `translated/`: Chinese in-layout PDFs produced from the corresponding source files.
-- Translation index: [17 translated papers, each in Chinese-only and bilingual editions](./translated/README.md).
+- Translation index: [16 translated background papers, each in Chinese-only and bilingual editions](./translated/README.md).
 
 ## Source status
 
 | # | Final paper name | Local source PDF | Public source | Note |
 |---:|---|---|---|---|
-| 1 | DynoPipe | `original/DynoPipe_ISCA26.pdf` | [Author page](https://yanyinglin.github.io/publications/) | ISCA 2026 paper supplied in the project workspace. |
 | 2 | Splitwise | `original/Splitwise_ISCA24_arXiv2311.18677v2.pdf` | [arXiv:2311.18677](https://arxiv.org/abs/2311.18677) | Public preprint. |
 | 3 | Helix | `original/Helix_ASPLOS25_arXiv2406.01566v2.pdf` | [arXiv:2406.01566](https://arxiv.org/abs/2406.01566) | Public preprint. |
 | 4 | Tetris | Not included | [Withdrawn arXiv:2511.06247](https://arxiv.org/abs/2511.06247) | The authors withdrew the preprint; arXiv no longer offers a PDF. |
@@ -29,4 +28,4 @@ This directory separates publicly accessible source PDFs from Chinese in-layout 
 | 17 | Kelle | `original/Kelle_MICRO25_arXiv2510.16040v1.pdf` | [arXiv:2510.16040](https://arxiv.org/abs/2510.16040) | Public preprint. |
 | 18 | llm.npu | `original/llm.npu_ASPLOS25_arXiv2407.05858v2.pdf` | [arXiv:2407.05858](https://arxiv.org/abs/2407.05858) | Public preprint. |
 
-The repository records provenance for research use. Copyright remains with the respective authors and publishers; consult each source page and PDF for its applicable license before redistributing derivatives.
+These papers remain useful background, but none directly runs one inference workflow across an end/edge–cloud boundary. Copyright remains with the respective authors and publishers.
