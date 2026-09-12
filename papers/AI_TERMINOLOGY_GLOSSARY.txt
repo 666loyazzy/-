@@ -1,0 +1,95 @@
+# AI and edge-cloud terminology. Longer phrases must precede shorter ones.
+Large Language Models -> 大语言模型
+Large Language Model -> 大语言模型
+Small Language Models -> 小语言模型
+Small Language Model -> 小语言模型
+Multi-Modal Large Language Models -> 多模态大语言模型
+Multimodal Large Language Models -> 多模态大语言模型
+Edge-Cloud Collaborative Inference -> 边云协同推理
+Edge–Cloud Collaborative Inference -> 边云协同推理
+Cloud-Edge Collaborative Inference -> 云边协同推理
+Device-Cloud Collaborative Inference -> 端云协同推理
+Device-Edge Co-Inference -> 端边协同推理
+device-edge co-inference -> 端边协同推理
+Collaborative Inference -> 协同推理
+Speculative Decoding -> 推测解码
+Split Inference -> 切分推理
+Pipeline-parallel Inference -> 流水线并行推理
+Sequential Inference -> 串行推理
+Edge-Cloud Inference -> 边云协同推理
+Edge–Cloud LLM Inference -> 边云大语言模型推理
+Model Partitioning -> 模型切分
+Computation Offloading -> 计算卸载
+Cloud Offloading -> 云端卸载
+multi-modal large language model -> 多模态大语言模型
+multimodal large language model -> 多模态大语言模型
+large language models -> 大语言模型
+large language model -> 大语言模型
+small language models -> 小语言模型
+small language model -> 小语言模型
+model partitioning -> 模型切分
+model placement -> 模型放置
+computation offloading -> 计算卸载
+task offloading -> 任务卸载
+collaborative inference -> 协同推理
+co-inference -> 协同推理
+speculative decoding -> 推测解码
+pipeline parallelism -> 流水线并行
+pipeline boundary -> 流水线边界
+intermediate features -> 中间特征
+intermediate feature -> 中间特征
+activation tensors -> 激活张量
+activation tensor -> 激活张量
+resource orchestration -> 资源编排
+heterogeneous resources -> 异构资源
+edge-cloud continuum -> 边云连续体
+edge–cloud continuum -> 边云连续体
+edge-cloud collaboration -> 边云协同
+edge–cloud collaboration -> 边云协同
+cloud-edge collaboration -> 云边协同
+cloud–edge collaboration -> 云边协同
+device-cloud collaboration -> 端云协同
+device–cloud collaboration -> 端云协同
+device-edge synergy -> 端边协同
+end devices -> 终端设备
+end device -> 终端设备
+edge devices -> 边缘设备
+edge device -> 边缘设备
+cloud servers -> 云服务器
+cloud server -> 云服务器
+wide-area network -> 广域网
+tail latency -> 尾延迟
+throughput -> 吞吐量
+goodput -> 有效吞吐量
+time to first token -> 首词元延迟
+time-to-first-token -> 首词元延迟
+tokens per output time -> 单输出词元时间
+key-value cache -> KV 缓存
+KV-cache -> KV 缓存
+KV cache -> KV 缓存
+prefill phase -> 预填充阶段
+decode phase -> 解码阶段
+early exit -> 提前退出
+early-exit -> 提前退出
+feature compression -> 特征压缩
+network bandwidth -> 网络带宽
+round-trip time -> 往返时延
+多模态法学硕士 -> 多模态大语言模型
+多模式法学硕士 -> 多模态大语言模型
+法学硕士 -> 大语言模型
+大型语言模型 -> 大语言模型
+prompts -> 提示词
+prompt -> 提示词
+embeddings -> 嵌入表示
+embedding -> 嵌入表示
+tokens -> 词元
+token -> 词元
+inference -> 推理
+offloading -> 卸载
+fine-tuning -> 微调
+reinforcement learning -> 强化学习
+weight pruning -> 权重剪枝
+knowledge distillation -> 知识蒸馏
+model compression -> 模型压缩
+predictor -> 预测器
+quantization -> 量化

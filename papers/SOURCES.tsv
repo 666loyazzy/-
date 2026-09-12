@@ -1,0 +1,21 @@
+filename	title	primary_source	classification
+DynoPipe_ISCA26.pdf	DynoPipe: Dynamic Pipeline Parallelism for Scalable LLM Inference	https://doi.org/10.1109/ISCA66397.2026.00077	core
+Neurosurgeon_ASPLOS17.pdf	Neurosurgeon: Collaborative Intelligence Between the Cloud and Mobile Edge	https://ypkang.github.io/downloads/kang17neurosurgeon.pdf	core
+Edgent_SEC18_arXiv1806.07840.pdf	Edge Intelligence: On-Demand Deep Learning Model Co-Inference with Device-Edge Synergy	https://arxiv.org/pdf/1806.07840	core
+JointDNN_TMC21_arXiv1801.08618.pdf	JointDNN: An Efficient Training and Inference Engine for Intelligent Mobile Cloud Computing Services	https://arxiv.org/pdf/1801.08618	core
+DDNN_ICDCS17_arXiv1709.01921.pdf	Distributed Deep Neural Networks over the Cloud, the Edge and End Devices	https://arxiv.org/pdf/1709.01921	core
+BottleNetPlusPlus_ICCW20_arXiv1910.14315.pdf	BottleNet++: An End-to-End Approach for Feature Compression in Device-Edge Co-Inference Systems	https://arxiv.org/pdf/1910.14315	core
+SPINN_MobiCom20_arXiv2008.06402.pdf	SPINN: Synergistic Progressive Inference of Neural Networks over Device and Cloud	https://arxiv.org/pdf/2008.06402	core
+CLIO_MobiCom20.pdf	CLIO: Enabling Automatic Compilation of Deep Learning Pipelines across IoT and Cloud	https://people.cs.umass.edu/~dganesan/papers/CLIO-Mobicom2020.pdf	core
+AppealNet_DAC21_arXiv2105.04104.pdf	AppealNet: An Efficient and Highly-Accurate Edge/Cloud Collaborative Architecture for DNN Inference	https://arxiv.org/pdf/2105.04104	core
+DynO_TECS22_arXiv2104.09949.pdf	DynO: Dynamic Onloading of Deep Neural Networks from Cloud to Device	https://arxiv.org/pdf/2104.09949	core
+MultiTASC_arXiv2306.12830.pdf	MultiTASC: A Multi-Tenancy-Aware Scheduler for Cascaded DNN Inference at the Consumer Edge	https://arxiv.org/pdf/2306.12830	core
+EdgeShard_arXiv2405.14371.pdf	EdgeShard: Efficient LLM Inference via Collaborative Edge Computing	https://arxiv.org/pdf/2405.14371	core
+CE-CoLLM_arXiv2411.02829.pdf	CE-CoLLM: Efficient and Adaptive Large Language Models Through Cloud-Edge Collaboration	https://arxiv.org/pdf/2411.02829	core
+HAT_arXiv2503.18989.pdf	A Novel Hat-Shaped Device-Cloud Collaborative Inference Framework for Large Language Models	https://arxiv.org/pdf/2503.18989	core
+CE-LSLM_arXiv2505.14085.pdf	CE-LSLM: Efficient Large-Small Language Model Inference and Communication via Cloud-Edge Collaboration	https://arxiv.org/pdf/2505.14085	core
+SplitLLM_arXiv2410.10759.pdf	SplitLLM: Collaborative Inference of LLMs for Model Placement and Request Scheduling	https://arxiv.org/pdf/2410.10759	core
+MoA-Off_arXiv2509.16995.pdf	MoA-Off: Adaptive Heterogeneous Modality-Aware Offloading with Edge-Cloud Collaboration for Efficient Multimodal LLM Inference	https://arxiv.org/pdf/2509.16995	core
+AceSpec_arXiv2609.02514.pdf	AceSpec: An Asymmetric Edge-Cloud Collaborative Framework for Communication-Efficient LLM Inference	https://arxiv.org/pdf/2609.02514	core
+PrivacyAware_EdgeCloud_LLM_arXiv2607.13093.pdf	Efficient and Privacy-Aware Edge-Cloud Collaborative Inference for Large Language Models	https://arxiv.org/pdf/2607.13093	core
+EdgeCloud_SLM_LLM_Survey_arXiv2507.16731.pdf	Collaborative Inference and Learning between Edge SLMs and Cloud LLMs: A Survey of Algorithms, Execution, and Open Challenges	https://arxiv.org/pdf/2507.16731	core-survey

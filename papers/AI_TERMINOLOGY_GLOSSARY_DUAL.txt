@@ -1,0 +1,5 @@
+# Only repair mistranslated Chinese text in bilingual PDFs; preserve the English source side.
+多模态法学硕士 -> 多模态大语言模型
+多模式法学硕士 -> 多模态大语言模型
+法学硕士 -> 大语言模型
+大型语言模型 -> 大语言模型

@@ -1,3 +1,3 @@
-# Original paper PDFs
+# Original PDFs
 
-Author-hosted or public preprint PDFs used for the DynoPipe-direction literature review. See [`../README.md`](../README.md) for provenance and title mappings.
+本目录保存严格边云协同论文的公开原文。下载地址和标题映射见 [`../SOURCES.tsv`](../SOURCES.tsv)。
