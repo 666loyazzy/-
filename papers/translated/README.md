@@ -1,6 +1,6 @@
 # 中文嵌字译文 / Chinese Translations
 
-本目录包含 `papers/original/` 中 17 篇论文的中文嵌字版本，由 [cc-pdf2zh-skill](https://github.com/haorantang1999/cc-pdf2zh-skill)（PDFMathTranslate / pdf2zh v1.9.11）生成。
+本目录包含 `papers/original/` 中 16 篇背景论文的中文嵌字版本，由 PDFMathTranslate / pdf2zh v1.9.11 生成。它们已从严格边云协同核心分支迁出。
 
 - `*-mono.pdf`：纯中文版
 - `*-dual.pdf`：中英双语对照版
@@ -15,7 +15,6 @@
 | AQUA | [mono](./AQUA_ASPLOS25_arXiv2407.21255v3-mono.pdf) | [dual](./AQUA_ASPLOS25_arXiv2407.21255v3-dual.pdf) |
 | Bullet | [mono](./Bullet_ASPLOS26_arXiv2504.19516v4-mono.pdf) | [dual](./Bullet_ASPLOS26_arXiv2504.19516v4-dual.pdf) |
 | DynamoLLM | [mono](./DynamoLLM_HPCA25_arXiv2408.00741v1-mono.pdf) | [dual](./DynamoLLM_HPCA25_arXiv2408.00741v1-dual.pdf) |
-| DynoPipe | [mono](./DynoPipe_ISCA26-mono.pdf) | [dual](./DynoPipe_ISCA26-dual.pdf) |
 | Helix | [mono](./Helix_ASPLOS25_arXiv2406.01566v2-mono.pdf) | [dual](./Helix_ASPLOS25_arXiv2406.01566v2-dual.pdf) |
 | Kelle | [mono](./Kelle_MICRO25_arXiv2510.16040v1-mono.pdf) | [dual](./Kelle_MICRO25_arXiv2510.16040v1-dual.pdf) |
 | MuxWise | [mono](./MuxWise_ASPLOS26_arXiv2504.14489v3-mono.pdf) | [dual](./MuxWise_ASPLOS26_arXiv2504.14489v3-dual.pdf) |
