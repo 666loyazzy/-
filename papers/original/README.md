@@ -1,3 +1,3 @@
 # Original paper PDFs
 
-Author-hosted or public preprint PDFs used for the DynoPipe-direction literature review. See [`../README.md`](../README.md) for provenance and title mappings.
+Author-hosted or public preprint PDFs retained as adjacent LLM-systems background. See [`../README.md`](../README.md) for provenance.
