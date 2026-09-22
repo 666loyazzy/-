@@ -1,32 +1,33 @@
 # 论文阅读与研究资料库
 
-本仓库按主题分支整理论文。`main` 是总入口；PDF 原文、中文嵌字版、双语版和主题资料保存在对应分支。
+本仓库按主题分支整理论文。`main` 是总入口，只汇总目录；PDF 原文、中文嵌字版、双语版和主题资料保存在对应分支。
 
 ## 分支导航
 
-| 分支 | 范围 | 论文数 | 状态 |
+| 分支 | 内容 | 论文数 | 状态 |
 |---|---|---:|---|
-| [`edge-cloud-papers`](https://github.com/666loyazzy/-/tree/edge-cloud-papers) | 严格边云协同：端/边与云之间存在真实的切分、路由、卸载、流水线或状态交换 | 20 | 20 篇原文、20 份中文单语版、20 份中英双语版；含术语表、来源表和 QA 报告 |
-| [`other-knowledge`](https://github.com/666loyazzy/-/tree/other-knowledge) | 与 LLM serving、端侧推理、数据中心调度等有关，但不满足严格边云协同定义 | 16 | 保留原有原文和译文，作为背景知识 |
-| [`robotics-papers`](https://github.com/666loyazzy/-/tree/robotics-papers) | 移动机器人、ROS 2、传感器、规划、控制、定位与 SLAM | 12 | 12 篇原文、中文版、双语版、BibTeX 与阅读提示 |
+| [`edge-cloud-papers`](https://github.com/666loyazzy/-/tree/edge-cloud-papers) | 严格端/边—云协同 LLM 推理 | 20 | 唯一有效的纯边云协同集合；每篇均有原文、中文单语版和中英双语版 |
+| [`other-knowledge`](https://github.com/666loyazzy/-/tree/other-knowledge) | LLM serving、端侧推理、数据中心调度及历史机制等辅助知识 | 16 | 原有背景知识保持不变 |
+| [`robotics-papers`](https://github.com/666loyazzy/-/tree/robotics-papers) | 移动机器人、ROS 2、传感器、规划、控制、定位与 SLAM | 12 | 原有机器人论文保持不变 |
 
-当前总目录共 **48 篇不重复论文**。
+按主索引统计，共 **48 篇不重复论文**：严格边云协同 20 篇、其它辅助知识 16 篇、机器人与 ROS 2 论文 12 篇。
 
-## 严格边云协同集合
+## 唯一有效的边云协同集合
 
-严格集合包含 DynoPipe、Neurosurgeon、Edgent、JointDNN、DDNN、BottleNet++、SPINN、CLIO、AppealNet、DynO、MultiTASC、EdgeShard、CE-CoLLM、HAT、CE-LSLM、SplitLLM、MoA-Off、AceSpec、Privacy-Aware Edge-Cloud LLM 和一篇 Edge SLM–Cloud LLM 综述。
+纯边云协同分支已经整体替换为 20 篇严格集合：DynoPipe、HAT、Crayon、CoGenesis、Division-of-Thoughts、DiSCo、Battery-Aware Speculative Decoding、Ygg、Efficient Deployment、Splitwise、FlexSpec、EdgeShard、CE-CoLLM、CE-LSLM、SplitLLM、PICE、MoA-Off、AceSpec、PrivacyAware 和作为历史机制基线保留的 DynO。
 
-- [完整论文索引](https://github.com/666loyazzy/-/blob/edge-cloud-papers/PAPERS.md)
-- [官方来源记录](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/SOURCES.tsv)
+此前主索引和纯边云分支中的旧清单均已作废；边云协同内容一律以 [`edge-cloud-papers`](https://github.com/666loyazzy/-/tree/edge-cloud-papers) 当前分支为准。
+
+- [20 篇完整论文索引](https://github.com/666loyazzy/-/blob/edge-cloud-papers/PAPERS.md)
+- [论文官方来源记录](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/SOURCES.tsv)
 - [PDF 翻译 QA 报告](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/QA_REPORT.md)
+- [边云协同分类标准](https://github.com/666loyazzy/-/blob/edge-cloud-papers/TAXONOMY.md)
 
-## 分类原则
+## 收录原则
 
-- `edge-cloud-papers` 只收录真实跨端/边—云协同执行的论文。
-- 纯数据中心 serving、仅端侧推理、仅 KV-cache/内存优化、仅 speculative decoding、仅 GPU 内并行等论文放入 `other-knowledge`。
+- `edge-cloud-papers` 只收录端/边设备与云/服务器共同完成同一次 LLM/MLLM 推理输出的研究。
+- 纯数据中心 serving、仅端侧推理、仅云端推理、通用 KV-cache/内存优化及 GPU 集群优化不计入严格边云协同集合。
 - 同一篇论文的英文原文、中文单语版和中英双语版只计为 1 篇。
-- 原文优先使用作者主页、会议/期刊页面或 arXiv 等公开来源。
-- PDF 翻译使用 PDFMathTranslate / pdf2zh，保留公式、图表和论文布局；AI 术语按领域语义统一，并检查中文字体嵌入与逐页渲染。
-- PDF 著作权归原作者及出版机构所有，仓库内容仅用于个人学习与学术研究。
+- PDF 著作权归原作者及出版机构所有，本仓库内容仅用于个人学习与学术研究。
 
 跨分支完整清单见 [`PAPERS.md`](PAPERS.md)。

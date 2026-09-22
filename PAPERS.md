@@ -1,33 +1,33 @@
 # 全仓库论文清单
 
-当前共 **48 篇不重复论文**：严格边云协同 20 篇、其它知识 16 篇、机器人与 ROS 2 共 12 篇。
+当前按主索引统计共 **48 篇不重复论文**：严格边云协同 20 篇、其它辅助知识 16 篇、机器人与 ROS 2 论文 12 篇。
 
-## A. 严格边云协同（20）
+## A. 严格边云协同 LLM（20）
 
 1. **DynoPipe: Heterogeneous Edge-Cloud LLM Serving with Dynamically Orchestrated Pipeline Boundaries** — ISCA 2026
-2. **Neurosurgeon: Collaborative Intelligence Between the Cloud and Mobile Edge** — ASPLOS 2017
-3. **Edge Intelligence: On-Demand Deep Learning Model Co-Inference with Device-Edge Synergy (Edgent)** — SEC 2018
-4. **JointDNN: An Efficient Training and Inference Engine for Intelligent Mobile Cloud Computing Services** — IEEE TMC 2021
-5. **Distributed Deep Neural Networks over the Cloud, the Edge and End Devices (DDNN)** — ICDCS 2017
-6. **BottleNet++: An End-to-End Approach for Feature Compression in Device-Edge Co-Inference Systems** — ICC Workshops 2020
-7. **SPINN: Synergistic Progressive Inference of Neural Networks over Device and Cloud** — MobiCom 2020
-8. **CLIO: Enabling Automatic Compilation of Deep Learning Pipelines across IoT and Cloud** — MobiCom 2020
-9. **AppealNet: An Efficient and Highly-Accurate Edge/Cloud Collaborative Architecture for DNN Inference** — DAC 2021
-10. **DynO: Dynamic Onloading of Deep Neural Networks from Cloud to Device** — ACM TECS 2022
-11. **MultiTASC: A Multi-Tenancy-Aware Scheduler for Cascaded DNN Inference at the Consumer Edge** — 2023
-12. **EdgeShard: Efficient LLM Inference via Collaborative Edge Computing** — 2024
+2. **A Novel Hat-Shaped Device-Cloud Collaborative Inference Framework for Large Language Models (HAT)** — INFOCOM 2026
+3. **Crayon: Customized On-Device LLM via Instant Adapter Blending and Edge-Server Hybrid Inference** — ACL 2024
+4. **CoGenesis: A Framework Collaborating Large and Small Language Models for Secure Context-Aware Instruction Following** — ACL 2024
+5. **Division-of-Thoughts: Harnessing Hybrid Language Model Synergy for Efficient On-Device Agents** — WWW 2025
+6. **DiSCo: Device-Server Collaborative LLM-Based Text Streaming Services** — Findings of ACL 2025
+7. **Online Scheduling of Battery-Aware Speculative Decoding for Energy-Efficient Cloud-Edge Collaborative LLM Inference** — ICPP 2026
+8. **Ygg: Tree-Based Collaborative Speculative Decoding with Token-Only Transmission** — IEEE/ACM IWQoS 2026
+9. **Efficient Deployment of Large Language Model across Cloud-Device Systems** — IEEE SoCC 2024
+10. **Splitwise: Collaborative Edge-Cloud Inference for LLMs via Lyapunov-Assisted DRL** — UCC 2025
+11. **FlexSpec: Frozen Drafts Meet Evolving Targets in Edge-Cloud Collaborative LLM Speculative Decoding** — IEEE TMC 2026
+12. **EdgeShard: Efficient LLM Inference via Collaborative Edge Computing** — IEEE Internet of Things Journal 2025
 13. **CE-CoLLM: Efficient and Adaptive Large Language Models Through Cloud-Edge Collaboration** — 2024
-14. **A Novel Hat-Shaped Device-Cloud Collaborative Inference Framework for Large Language Models (HAT)** — 2025
-15. **CE-LSLM: Efficient Large-Small Language Model Inference and Communication via Cloud-Edge Collaboration** — 2025
-16. **SplitLLM: Collaborative Inference of LLMs for Model Placement and Request Scheduling** — 2024
+14. **CE-LSLM: Efficient Large-Small Language Model Inference and Communication via Cloud-Edge Collaboration** — 2025
+15. **SplitLLM: Collaborative Inference of LLMs for Model Placement and Request Scheduling** — 2024
+16. **PICE: A Semantic-Driven Progressive Inference System for LLM Serving in Cloud-Edge Networks** — 2025
 17. **MoA-Off: Adaptive Heterogeneous Modality-Aware Offloading with Edge-Cloud Collaboration for Efficient Multimodal LLM Inference** — 2025
 18. **AceSpec: An Asymmetric Edge-Cloud Collaborative Framework for Communication-Efficient LLM Inference** — 2026
-19. **Efficient and Privacy-Aware Edge-Cloud Collaborative Inference for Large Language Models** — 2026
-20. **Collaborative Inference and Learning between Edge SLMs and Cloud LLMs: A Survey of Algorithms, Execution, and Open Challenges** — 2025
+19. **Efficient and Privacy-Aware Edge-Cloud Collaborative Inference for Large Language Models (PrivacyAware)** — 2026
+20. **DynO: Dynamic Onloading of Deep Neural Networks from Cloud to Device** — ACM TECS 2022（按要求保留的历史机制基线）
 
 [查看原文、译文、来源与验收结果](https://github.com/666loyazzy/-/blob/edge-cloud-papers/PAPERS.md)
 
-## B. 其它知识（16）
+## B. 其它辅助知识（16）
 
 1. **Splitwise** — 数据中心 Prefill/Decode 阶段拆分
 2. **Helix** — 异构数据中心 GPU 放置与网络调度
@@ -46,7 +46,7 @@
 15. **Kelle** — 无云侧协同执行的边缘 KV/eDRAM 设计
 16. **llm.npu** — 纯端侧异构 NPU 推理
 
-[查看背景知识分支](https://github.com/666loyazzy/-/blob/other-knowledge/PAPERS.md)
+[查看辅助知识分支](https://github.com/666loyazzy/-/blob/other-knowledge/PAPERS.md)
 
 ## C. 机器人与 ROS 2（12）
 
@@ -65,8 +65,9 @@
 
 [查看机器人分支](https://github.com/666loyazzy/-/blob/robotics-papers/PAPERS.md)
 
-## 计数规则
+## 计数与维护规则
 
 - 同一篇论文的原文、中文版和双语版只计为 1 篇。
-- `main` 只汇总，不复制主题分支的大体积 PDF。
-- 新增论文时同步更新本文件、主干 README 和对应主题分支。
+- `main` 只维护跨分支总索引，不复制主题分支的大体积 PDF。
+- 纯边云协同内容以 `edge-cloud-papers` 当前 20 篇清单为唯一标准。
+- `other-knowledge` 和 `robotics-papers` 的现有资料保持独立，不因纯边云集合替换而改动。
