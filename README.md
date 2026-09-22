@@ -1,23 +1,43 @@
-# Edge–Cloud Collaborative AI Papers
+# Strict Edge-Cloud Collaborative LLM Papers
 
-本分支只收录真正跨端/边—云边界协同执行 AI 推理或学习任务的论文。核心判断不是标题里是否出现 “edge”，而是端/边与云是否通过模型切分、动态卸载、级联路由、跨边界流水线、特征/状态交换等机制共同完成任务。
+本分支仅用于严格端/边—云协同 LLM 研究。原有 DNN/LLM 混合集合、旧 PDF、旧译文、旧索引和旧研究说明已全部删除；后续文件只按下面 20 篇清单重新整理。
 
-## 当前规模
+## A. 顶会/正式发表优先
 
-- 严格相关论文：20 篇（19 篇研究论文＋1 篇领域综述）
-- 已有核心论文：DynoPipe
-- 本次新增：19 篇，全部来自作者主页、会议页面或 arXiv
-- 被移出的原有背景论文：16 篇，转入 [`other-knowledge`](https://github.com/666loyazzy/-/tree/other-knowledge)
+1. **DynoPipe: Heterogeneous Edge-Cloud LLM Serving with Dynamically Orchestrated Pipeline Boundaries** — ISCA 2026
+2. **A Novel Hat-Shaped Device-Cloud Collaborative Inference Framework for Large Language Models (HAT)** — INFOCOM 2026
+3. **Crayon: Customized On-Device LLM via Instant Adapter Blending and Edge-Server Hybrid Inference** — ACL 2024
+4. **CoGenesis: A Framework Collaborating Large and Small Language Models for Secure Context-Aware Instruction Following** — ACL 2024
+5. **Division-of-Thoughts: Harnessing Hybrid Language Model Synergy for Efficient On-Device Agents** — The Web Conference (WWW) 2025
+6. **DiSCo: Device-Server Collaborative LLM-Based Text Streaming Services** — Findings of ACL 2025
+7. **Online Scheduling of Battery-Aware Speculative Decoding for Energy-Efficient Cloud-Edge Collaborative LLM Inference** — ICPP 2026
+8. **Ygg: Tree-Based Collaborative Speculative Decoding with Token-Only Transmission** — IEEE/ACM IWQoS 2026
+9. **Efficient Deployment of Large Language Model across Cloud-Device Systems** — IEEE SoCC 2024
+10. **Splitwise: Collaborative Edge-Cloud Inference for LLMs via Lyapunov-Assisted DRL** — UCC 2025
+11. **FlexSpec: Frozen Drafts Meet Evolving Targets in Edge-Cloud Collaborative LLM Speculative Decoding** — IEEE TMC 2026
+12. **EdgeShard: Efficient LLM Inference via Collaborative Edge Computing** — IEEE Internet of Things Journal 2025
 
-## 核心研究线
+## B. 严格端/边—云协同 LLM 研究
 
-1. 动态模型切分与计算卸载
-2. 端/边—云协同 DNN 推理
-3. 端侧小模型与云侧大模型协同
-4. 跨边界流水线和中间特征压缩
-5. 带宽、RTT、负载与资源波动感知调度
-6. 隐私感知的跨边界推理
+13. **CE-CoLLM: Efficient and Adaptive Large Language Models Through Cloud-Edge Collaboration** — 2024
+14. **CE-LSLM: Efficient Large-Small Language Model Inference and Communication via Cloud-Edge Collaboration** — 2025
+15. **SplitLLM: Collaborative Inference of LLMs for Model Placement and Request Scheduling** — 2024
+16. **PICE: A Semantic-Driven Progressive Inference System for LLM Serving in Cloud-Edge Networks** — 2025
+17. **MoA-Off: Adaptive Heterogeneous Modality-Aware Offloading with Edge-Cloud Collaboration for Efficient Multimodal LLM Inference** — 2025
+18. **AceSpec: An Asymmetric Edge-Cloud Collaborative Framework for Communication-Efficient LLM Inference** — 2026
+19. **Efficient and Privacy-Aware Edge-Cloud Collaborative Inference for Large Language Models (PrivacyAware)** — 2026
 
-完整清单、来源和分类见 [`PAPERS.md`](PAPERS.md)、[`papers/SOURCES.tsv`](papers/SOURCES.tsv) 与 [`TAXONOMY.md`](TAXONOMY.md)。
+## C. 按要求保留的历史机制基线
 
-PDF 著作权归原作者及出版机构所有，本仓库仅用于个人学习与学术研究。
+20. **DynO: Dynamic Onloading of Deep Neural Networks from Cloud to Device** — ACM TECS 2022
+
+## 排除规则
+
+以下内容不进入本分支的严格集合：
+
+- 纯数据中心 LLM serving；
+- 仅端侧推理；
+- 仅云端推理；
+- 仅 KV-cache 或内存优化。
+
+同一篇论文的英文原文、中文单语版和中英双语版只计为 1 篇。PDF 著作权归原作者及出版机构所有，本分支内容仅用于个人学习与学术研究。
