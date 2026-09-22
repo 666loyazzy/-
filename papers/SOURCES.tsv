@@ -1,0 +1,21 @@
+filename	title	open_pdf	venue_or_record	classification
+DynoPipe_ISCA26.pdf	DynoPipe: Heterogeneous Edge-Cloud LLM Serving with Dynamically Orchestrated Pipeline Boundaries	https://doi.org/10.1109/ISCA66397.2026.00077	ISCA 2026	core-formal
+HAT_arXiv2503.18989.pdf	A Novel Hat-Shaped Device-Cloud Collaborative Inference Framework for Large Language Models	https://arxiv.org/pdf/2503.18989	https://doi.org/10.1109/INFOCOM59046.2026.11571521	core-formal
+Crayon_ACL24_arXiv2406.07007.pdf	Crayon: Customized On-Device LLM via Instant Adapter Blending and Edge-Server Hybrid Inference	https://arxiv.org/pdf/2406.07007	https://aclanthology.org/2024.acl-long.204/	core-formal
+CoGenesis_ACL24.pdf	CoGenesis: A Framework Collaborating Large and Small Language Models for Secure Context-Aware Instruction Following	https://aclanthology.org/2024.acl-long.235.pdf	https://aclanthology.org/2024.acl-long.235/	core-formal
+DivisionOfThoughts_WWW25_arXiv2502.04392.pdf	Division-of-Thoughts: Harnessing Hybrid Language Model Synergy for Efficient On-Device Agents	https://arxiv.org/pdf/2502.04392	https://doi.org/10.1145/3696410.3714765	core-formal
+DiSCo_FindingsACL25.pdf	DiSCo: Device-Server Collaborative LLM-Based Text Streaming Services	https://aclanthology.org/2025.findings-acl.734.pdf	https://aclanthology.org/2025.findings-acl.734/	core-formal
+BatteryAwareSpec_ICPP26.pdf	Online Scheduling of Battery-Aware Speculative Decoding for Energy-Efficient Cloud-Edge Collaborative LLM Inference	https://ljiao.github.io/papers/icpp26.pdf	https://doi.org/10.1145/3832810.3832825	core-formal
+Ygg_IWQoS26.pdf	Ygg: Tree-Based Collaborative Speculative Decoding with Token-Only Transmission	https://cis.temple.edu/~jiewu/research/publications/Publication_files/Ygg.pdf	https://iwqos2026.ieee-iwqos.org/detailed-technical-sessions	core-formal
+EfficientDeployment_SOCC24.pdf	Efficient Deployment of Large Language Model across Cloud-Device Systems	https://nicsefc.ee.tsinghua.edu.cn/%2Fnics_file%2Fpdf%2Ff06a14c1-4d6d-441d-b4e4-82545ac5781b.pdf	https://doi.org/10.1109/SOCC62300.2024.10737825	core-formal
+Splitwise_UCC25_arXiv2512.23310.pdf	Splitwise: Collaborative Edge-Cloud Inference for LLMs via Lyapunov-Assisted DRL	https://arxiv.org/pdf/2512.23310	https://doi.org/10.1145/3773274.3774267	core-formal
+FlexSpec_TMC26_arXiv2601.00644.pdf	FlexSpec: Frozen Drafts Meet Evolving Targets in Edge-Cloud Collaborative LLM Speculative Decoding	https://arxiv.org/pdf/2601.00644	https://www.computer.org/csdl/journal/tm/2026/09/11480773/2fEJkw4FRUA	core-formal
+EdgeShard_arXiv2405.14371.pdf	EdgeShard: Efficient LLM Inference via Collaborative Edge Computing	https://arxiv.org/pdf/2405.14371	IEEE Internet of Things Journal 12(10), 2025	core-formal
+CE-CoLLM_arXiv2411.02829.pdf	CE-CoLLM: Efficient and Adaptive Large Language Models Through Cloud-Edge Collaboration	https://arxiv.org/pdf/2411.02829	arXiv:2411.02829	core-preprint
+CE-LSLM_arXiv2505.14085.pdf	CE-LSLM: Efficient Large-Small Language Model Inference and Communication via Cloud-Edge Collaboration	https://arxiv.org/pdf/2505.14085	arXiv:2505.14085	core-preprint
+SplitLLM_arXiv2410.10759.pdf	SplitLLM: Collaborative Inference of LLMs for Model Placement and Request Scheduling	https://arxiv.org/pdf/2410.10759	arXiv:2410.10759	core-preprint
+PICE_arXiv2501.09367.pdf	PICE: A Semantic-Driven Progressive Inference System for LLM Serving in Cloud-Edge Networks	https://arxiv.org/pdf/2501.09367	arXiv:2501.09367	core-preprint
+MoA-Off_arXiv2509.16995.pdf	MoA-Off: Adaptive Heterogeneous Modality-Aware Offloading with Edge-Cloud Collaboration for Efficient Multimodal LLM Inference	https://arxiv.org/pdf/2509.16995	arXiv:2509.16995	core-preprint
+AceSpec_arXiv2609.02514.pdf	AceSpec: An Asymmetric Edge-Cloud Collaborative Framework for Communication-Efficient LLM Inference	https://arxiv.org/pdf/2609.02514	arXiv:2609.02514	core-preprint
+PrivacyAware_EdgeCloud_LLM_arXiv2607.13093.pdf	Efficient and Privacy-Aware Edge-Cloud Collaborative Inference for Large Language Models	https://arxiv.org/pdf/2607.13093	arXiv:2607.13093	core-preprint
+DynO_TECS22_arXiv2104.09949.pdf	DynO: Dynamic Onloading of Deep Neural Networks from Cloud to Device	https://arxiv.org/pdf/2104.09949	ACM TECS 2022	historical-retained-by-request

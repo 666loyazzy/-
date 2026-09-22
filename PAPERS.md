@@ -1,7 +1,5 @@
 # Strict Edge-Cloud Collaborative LLM Paper Index (20)
 
-本文件是本分支唯一有效的严格端/边—云协同 LLM 论文清单。
-
 ## A. 顶会/正式发表优先
 
 1. **DynoPipe: Heterogeneous Edge-Cloud LLM Serving with Dynamically Orchestrated Pipeline Boundaries** — ISCA 2026
@@ -17,7 +15,7 @@
 11. **FlexSpec: Frozen Drafts Meet Evolving Targets in Edge-Cloud Collaborative LLM Speculative Decoding** — IEEE TMC 2026
 12. **EdgeShard: Efficient LLM Inference via Collaborative Edge Computing** — IEEE Internet of Things Journal 2025
 
-## B. 严格端/边—云协同 LLM 研究
+## B. 严格端/边-云协同 LLM 研究
 
 13. **CE-CoLLM: Efficient and Adaptive Large Language Models Through Cloud-Edge Collaboration** — 2024
 14. **CE-LSLM: Efficient Large-Small Language Model Inference and Communication via Cloud-Edge Collaboration** — 2025
@@ -33,11 +31,4 @@
 
 ## 排除规则
 
-以下内容不计入严格集合：
-
-- 纯数据中心 LLM serving；
-- 仅端侧推理；
-- 仅云端推理；
-- 仅 KV-cache 或内存优化。
-
-同一篇论文的英文原文、中文单语版和中英双语版只计为 1 篇。
+纯数据中心 LLM serving、仅端侧推理、仅云端推理、仅 KV-cache/内存优化、仅 GPU 集群并行、综述，以及没有实际跨端/边—云联合生成/校验/切分路径的论文均不计入。推测解码只有在草稿模型位于端/边、目标模型位于云并共同产出同一序列时才收录。
