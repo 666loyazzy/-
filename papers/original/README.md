@@ -1,3 +1,3 @@
-# Original paper PDFs
+# 辅助知识原文 PDF
 
-Author-hosted or public preprint PDFs used for the DynoPipe-direction literature review. See [`../README.md`](../README.md) for provenance and title mappings.
+本目录保存 16 篇边云与 LLM 系统辅助知识的公开原文或预印本，不包含严格边云协同集合。论文与文件对应关系见 [`../README.md`](../README.md)。
