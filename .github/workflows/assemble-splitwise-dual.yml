@@ -1,0 +1,37 @@
+name: Assemble verified Splitwise dual PDF
+
+on:
+  push:
+    branches:
+      - edge-cloud-papers
+    paths:
+      - '.upload-parts/Splitwise-dual.part-*'
+      - '.github/workflows/assemble-splitwise-dual.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Assemble, verify, and commit
+        shell: bash
+        run: |
+          cat \
+            .upload-parts/Splitwise-dual.part-00 \
+            .upload-parts/Splitwise-dual.part-01 \
+            .upload-parts/Splitwise-dual.part-02 \
+            .upload-parts/Splitwise-dual.part-03 \
+            > papers/translated/Splitwise_UCC25_arXiv2512.23310-dual.pdf
+          test "$(git hash-object papers/translated/Splitwise_UCC25_arXiv2512.23310-dual.pdf)" = "99260e066f81b149e4673c10c9665d9d992b6eb3"
+          rm -rf .upload-parts
+          rm .github/workflows/assemble-splitwise-dual.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Restore verified Splitwise dual PDF"
+          git push origin HEAD:edge-cloud-papers
