@@ -1,6 +1,8 @@
-# Taxonomy — DynoPipe Direction Only
+# Taxonomy - Strict Edge-Cloud Collaborative LLM Inference
 
-This repository is intentionally narrow. A paper is included only when it directly studies **dynamic collaborative LLM inference across edge/cloud or closely related distributed edge resources**.
+当前严格集合为 20 篇，含 PipeSD 与 SpecEdge；论文清单以[严格主题索引](https://github.com/666loyazzy/-/blob/edge-cloud-papers/PAPERS.md)为准。
+
+The strict edge-cloud theme collection is intentionally narrow. Except for the explicitly retained DynO historical baseline, a paper is included only when an endpoint/edge model and a cloud/server model jointly contribute to the same LLM/MLLM inference output.
 
 ## A. Dynamic Partitioning / Split Computing
 
@@ -56,14 +58,16 @@ Include work that evaluates or optimizes for:
 - weak or intermittent connectivity
 - P95 / P99 tail latency
 
-## F. Closely Related Background
+## F. Collaborative Generation and Verification
 
-Generic DNN split inference or datacenter pipeline-serving work may be kept only if it contributes a mechanism directly reusable for DynoPipe-style research. It must be labeled `background`, not `core`.
+Include work where the two sides jointly produce one result through draft-and-verify, sketch-and-expand, token streaming handoff, subtask decomposition and synthesis, or privacy-preserving knowledge fusion.
+
+Simple whole-request routing is insufficient unless both sides participate in the same request's output path.
 
 ## Exclusion Rule
 
 Exclude papers whose main contribution is only:
-- speculative decoding
+- speculative decoding wholly inside one cloud/datacenter
 - self-speculative decoding
 - MoE expert substitution / caching
 - quantization / pruning / distillation
@@ -71,7 +75,7 @@ Exclude papers whose main contribution is only:
 - generic compiler / kernel optimization
 - generic datacenter serving
 
-unless the paper directly contributes to **edge-cloud partitioning, orchestration, state migration, or WAN-aware serving**.
+unless the paper directly contributes to **cross-boundary generation, verification, partitioning, orchestration, state migration, or WAN-aware serving**.
 
 ## Tags
 

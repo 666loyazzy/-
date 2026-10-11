@@ -1,72 +1,96 @@
 # 全仓库论文清单
 
-当前共 **48 篇不重复论文**：严格边云协同 20 篇、其它知识 16 篇、机器人与 ROS 2 共 12 篇。
+仓库导航：[总索引（57 篇）](https://github.com/666loyazzy/research-papers/blob/main/PAPERS.md) · [严格边云（20 篇）](https://github.com/666loyazzy/-/blob/edge-cloud-papers/PAPERS.md) · [辅助知识（25 篇）](https://github.com/666loyazzy/-/blob/other-knowledge/PAPERS.md) · [机器人与 ROS 2（12 篇）](https://github.com/666loyazzy/-/blob/robotics-papers/PAPERS.md)。
 
-## A. 严格边云协同（20）
+当前共有 **57 篇不重复论文**：严格边云协同 20 篇、其它辅助知识 25 篇、机器人与 ROS 2 论文 12 篇。按本仓库三个主题分支的实际原文文件统计；独立仓库 `research-papers/main` 的 20 篇严格集合副本和本仓库 `桌宠` 的 17 篇资料副本均不重复计数。
 
-1. **DynoPipe: Heterogeneous Edge-Cloud LLM Serving with Dynamically Orchestrated Pipeline Boundaries** — ISCA 2026
-2. **Neurosurgeon: Collaborative Intelligence Between the Cloud and Mobile Edge** — ASPLOS 2017
-3. **Edge Intelligence: On-Demand Deep Learning Model Co-Inference with Device-Edge Synergy (Edgent)** — SEC 2018
-4. **JointDNN: An Efficient Training and Inference Engine for Intelligent Mobile Cloud Computing Services** — IEEE TMC 2021
-5. **Distributed Deep Neural Networks over the Cloud, the Edge and End Devices (DDNN)** — ICDCS 2017
-6. **BottleNet++: An End-to-End Approach for Feature Compression in Device-Edge Co-Inference Systems** — ICC Workshops 2020
-7. **SPINN: Synergistic Progressive Inference of Neural Networks over Device and Cloud** — MobiCom 2020
-8. **CLIO: Enabling Automatic Compilation of Deep Learning Pipelines across IoT and Cloud** — MobiCom 2020
-9. **AppealNet: An Efficient and Highly-Accurate Edge/Cloud Collaborative Architecture for DNN Inference** — DAC 2021
-10. **DynO: Dynamic Onloading of Deep Neural Networks from Cloud to Device** — ACM TECS 2022
-11. **MultiTASC: A Multi-Tenancy-Aware Scheduler for Cascaded DNN Inference at the Consumer Edge** — 2023
-12. **EdgeShard: Efficient LLM Inference via Collaborative Edge Computing** — 2024
-13. **CE-CoLLM: Efficient and Adaptive Large Language Models Through Cloud-Edge Collaboration** — 2024
-14. **A Novel Hat-Shaped Device-Cloud Collaborative Inference Framework for Large Language Models (HAT)** — 2025
-15. **CE-LSLM: Efficient Large-Small Language Model Inference and Communication via Cloud-Edge Collaboration** — 2025
-16. **SplitLLM: Collaborative Inference of LLMs for Model Placement and Request Scheduling** — 2024
-17. **MoA-Off: Adaptive Heterogeneous Modality-Aware Offloading with Edge-Cloud Collaboration for Efficient Multimodal LLM Inference** — 2025
-18. **AceSpec: An Asymmetric Edge-Cloud Collaborative Framework for Communication-Efficient LLM Inference** — 2026
-19. **Efficient and Privacy-Aware Edge-Cloud Collaborative Inference for Large Language Models** — 2026
-20. **Collaborative Inference and Learning between Edge SLMs and Cloud LLMs: A Survey of Algorithms, Execution, and Open Challenges** — 2025
+## A. 严格边云协同 LLM（20）
 
-[查看原文、译文、来源与验收结果](https://github.com/666loyazzy/-/blob/edge-cloud-papers/PAPERS.md)
+当前清单以 `edge-cloud-papers/PAPERS.md` 为准，19 篇 LLM/MLLM 协同研究加 1 篇明确保留的 DynO 历史机制基线。PipeSD（ICML 2026）与 SpecEdge（NeurIPS 2025）已纳入当前集合。
 
-## B. 其它知识（16）
+1. **DynoPipe: Heterogeneous Edge-Cloud LLM Serving with Dynamically Orchestrated Pipeline Boundaries** — ISCA 2026 — [原文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/original/DynoPipe_ISCA26.pdf) · [中文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/DynoPipe_ISCA26-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/DynoPipe_ISCA26-dual.pdf)
+2. **A Novel Hat-Shaped Device-Cloud Collaborative Inference Framework for Large Language Models (HAT)** — INFOCOM 2026 — [原文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/original/HAT_arXiv2503.18989.pdf) · [中文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/HAT_arXiv2503.18989-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/HAT_arXiv2503.18989-dual.pdf)
+3. **Crayon: Customized On-Device LLM via Instant Adapter Blending and Edge-Server Hybrid Inference** — ACL 2024 — [原文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/original/Crayon_ACL24_arXiv2406.07007.pdf) · [中文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/Crayon_ACL24_arXiv2406.07007-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/Crayon_ACL24_arXiv2406.07007-dual.pdf)
+4. **CoGenesis: A Framework Collaborating Large and Small Language Models for Secure Context-Aware Instruction Following** — ACL 2024 — [原文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/original/CoGenesis_ACL24.pdf) · [中文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/CoGenesis_ACL24-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/CoGenesis_ACL24-dual.pdf)
+5. **Division-of-Thoughts: Harnessing Hybrid Language Model Synergy for Efficient On-Device Agents** — The Web Conference (WWW) 2025 — [原文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/original/DivisionOfThoughts_WWW25_arXiv2502.04392.pdf) · [中文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/DivisionOfThoughts_WWW25_arXiv2502.04392-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/DivisionOfThoughts_WWW25_arXiv2502.04392-dual.pdf)
+6. **DiSCo: Device-Server Collaborative LLM-Based Text Streaming Services** — Findings of ACL 2025 — [原文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/original/DiSCo_FindingsACL25.pdf) · [中文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/DiSCo_FindingsACL25-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/DiSCo_FindingsACL25-dual.pdf)
+7. **PipeSD: An Efficient Cloud-Edge Collaborative Pipeline Inference Framework with Speculative Decoding** — ICML 2026 — [原文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/original/PipeSD_ICML26.pdf) · [中文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/PipeSD_ICML26-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/PipeSD_ICML26-dual.pdf)
+8. **SpecEdge: Scalable Edge-Assisted Serving Framework for Interactive LLMs** — NeurIPS 2025 — [原文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/original/SpecEdge_NeurIPS25.pdf) · [中文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/SpecEdge_NeurIPS25-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/SpecEdge_NeurIPS25-dual.pdf)
+9. **Ygg: Tree-Based Collaborative Speculative Decoding with Token-Only Transmission** — IEEE/ACM IWQoS 2026 — [原文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/original/Ygg_IWQoS26.pdf) · [中文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/Ygg_IWQoS26-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/Ygg_IWQoS26-dual.pdf)
+10. **Efficient Deployment of Large Language Model across Cloud-Device Systems** — IEEE SoCC 2024 — [原文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/original/EfficientDeployment_SOCC24.pdf) · [中文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/EfficientDeployment_SOCC24-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/EfficientDeployment_SOCC24-dual.pdf)
+11. **Splitwise: Collaborative Edge-Cloud Inference for LLMs via Lyapunov-Assisted DRL** — UCC 2025 — [原文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/original/Splitwise_UCC25_arXiv2512.23310.pdf) · [中文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/Splitwise_UCC25_arXiv2512.23310-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/Splitwise_UCC25_arXiv2512.23310-dual.pdf)
+12. **FlexSpec: Frozen Drafts Meet Evolving Targets in Edge-Cloud Collaborative LLM Speculative Decoding** — IEEE TMC 2026 — [原文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/original/FlexSpec_TMC26_arXiv2601.00644.pdf) · [中文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/FlexSpec_TMC26_arXiv2601.00644-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/FlexSpec_TMC26_arXiv2601.00644-dual.pdf)
+13. **EdgeShard: Efficient LLM Inference via Collaborative Edge Computing** — IEEE Internet of Things Journal 2025 — [原文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/original/EdgeShard_arXiv2405.14371.pdf) · [中文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/EdgeShard_arXiv2405.14371-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/EdgeShard_arXiv2405.14371-dual.pdf)
+14. **CE-CoLLM: Efficient and Adaptive Large Language Models Through Cloud-Edge Collaboration** — 2024 — [原文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/original/CE-CoLLM_arXiv2411.02829.pdf) · [中文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/CE-CoLLM_arXiv2411.02829-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/CE-CoLLM_arXiv2411.02829-dual.pdf)
+15. **CE-LSLM: Efficient Large-Small Language Model Inference and Communication via Cloud-Edge Collaboration** — 2025 — [原文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/original/CE-LSLM_arXiv2505.14085.pdf) · [中文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/CE-LSLM_arXiv2505.14085-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/CE-LSLM_arXiv2505.14085-dual.pdf)
+16. **PICE: A Semantic-Driven Progressive Inference System for LLM Serving in Cloud-Edge Networks** — 2025 — [原文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/original/PICE_arXiv2501.09367.pdf) · [中文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/PICE_arXiv2501.09367-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/PICE_arXiv2501.09367-dual.pdf)
+17. **MoA-Off: Adaptive Heterogeneous Modality-Aware Offloading with Edge-Cloud Collaboration for Efficient Multimodal LLM Inference** — 2025 — [原文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/original/MoA-Off_arXiv2509.16995.pdf) · [中文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/MoA-Off_arXiv2509.16995-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/MoA-Off_arXiv2509.16995-dual.pdf)
+18. **AceSpec: An Asymmetric Edge-Cloud Collaborative Framework for Communication-Efficient LLM Inference** — 2026 — [原文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/original/AceSpec_arXiv2609.02514.pdf) · [中文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/AceSpec_arXiv2609.02514-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/AceSpec_arXiv2609.02514-dual.pdf)
+19. **Efficient and Privacy-Aware Edge-Cloud Collaborative Inference for Large Language Models (PrivacyAware)** — 2026 — [原文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/original/PrivacyAware_EdgeCloud_LLM_arXiv2607.13093.pdf) · [中文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/PrivacyAware_EdgeCloud_LLM_arXiv2607.13093-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/PrivacyAware_EdgeCloud_LLM_arXiv2607.13093-dual.pdf)
+20. **DynO: Dynamic Onloading of Deep Neural Networks from Cloud to Device** — ACM TECS 2022 — [原文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/original/DynO_TECS22_arXiv2104.09949.pdf) · [中文](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/DynO_TECS22_arXiv2104.09949-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/translated/DynO_TECS22_arXiv2104.09949-dual.pdf)
 
-1. **Splitwise** — 数据中心 Prefill/Decode 阶段拆分
-2. **Helix** — 异构数据中心 GPU 放置与网络调度
-3. **TPLA** — 数据中心解耦式 Prefill/Decode 张量并行
-4. **MuxWise** — 数据中心 Prefill/Decode 资源复用
-5. **Past-Future Scheduler** — 数据中心 SLA 感知请求调度
-6. **QoServe / Niyama** — 数据中心推理协同调度与隔离
-7. **Shift Parallelism** — 数据中心动态工作负载并行策略切换
-8. **XY-Serve** — 生产环境数据中心 LLM serving
-9. **Bullet** — 数据中心 GPU 时空编排
-10. **DynamoLLM** — 数据中心推理集群设计与重配置
-11. **POD-Attention** — GPU 内核级 Prefill/Decode 重叠
-12. **SwiftSpec** — 服务器基础设施内的解耦式推测解码
-13. **vAttention** — 数据中心 KV cache 虚拟内存管理
-14. **AQUA** — Scale-up GPU 域内存卸载
-15. **Kelle** — 无云侧协同执行的边缘 KV/eDRAM 设计
-16. **llm.npu** — 纯端侧异构 NPU 推理
+[官方来源记录](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/SOURCES.tsv) · [PDF 翻译 QA](https://github.com/666loyazzy/-/blob/edge-cloud-papers/papers/QA_REPORT.md)
 
-[查看背景知识分支](https://github.com/666loyazzy/-/blob/other-knowledge/PAPERS.md)
+## B. 其它辅助知识（25）
+
+### B.1 相邻 LLM 系统知识（16）
+
+| # | 论文 | 分类说明 | 原文 | 中文 | 双语 |
+|---:|---|---|---|---|---|
+| 1 | Splitwise (ISCA 2024) | 数据中心 Prefill/Decode 解耦，不跨端/边—云边界。 | [原文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/original/Splitwise_ISCA24_arXiv2311.18677v2.pdf) | [中文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/Splitwise_ISCA24_arXiv2311.18677v2-mono.pdf) | [双语](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/Splitwise_ISCA24_arXiv2311.18677v2-dual.pdf) |
+| 2 | Helix | 数据中心异构 GPU 放置与网络调度。 | [原文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/original/Helix_ASPLOS25_arXiv2406.01566v2.pdf) | [中文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/Helix_ASPLOS25_arXiv2406.01566v2-mono.pdf) | [双语](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/Helix_ASPLOS25_arXiv2406.01566v2-dual.pdf) |
+| 3 | TPLA | 数据中心解耦式 Prefill/Decode 张量并行。 | [原文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/original/TPLA_ASPLOS26_arXiv2508.15881v2.pdf) | [中文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/TPLA_ASPLOS26_arXiv2508.15881v2-mono.pdf) | [双语](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/TPLA_ASPLOS26_arXiv2508.15881v2-dual.pdf) |
+| 4 | MuxWise | 数据中心 Prefill/Decode 资源复用。 | [原文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/original/MuxWise_ASPLOS26_arXiv2504.14489v3.pdf) | [中文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/MuxWise_ASPLOS26_arXiv2504.14489v3-mono.pdf) | [双语](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/MuxWise_ASPLOS26_arXiv2504.14489v3-dual.pdf) |
+| 5 | Past-Future Scheduler | 数据中心 SLA 感知请求调度。 | [原文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/original/Past-Future-Scheduler_ASPLOS25_arXiv2507.10150v1.pdf) | [中文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/Past-Future-Scheduler_ASPLOS25_arXiv2507.10150v1-mono.pdf) | [双语](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/Past-Future-Scheduler_ASPLOS25_arXiv2507.10150v1-dual.pdf) |
+| 6 | QoServe / Niyama | 数据中心推理协同调度与隔离。 | [原文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/original/QoServe_ASPLOS26_preprint-Niyama-arXiv2503.22562v1.pdf) | [中文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/QoServe_ASPLOS26_preprint-Niyama-arXiv2503.22562v1-mono.pdf) | [双语](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/QoServe_ASPLOS26_preprint-Niyama-arXiv2503.22562v1-dual.pdf) |
+| 7 | Shift Parallelism | 数据中心动态负载下切换并行方式。 | [原文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/original/Shift-Parallelism_ASPLOS26_arXiv2509.16495v2.pdf) | [中文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/Shift-Parallelism_ASPLOS26_arXiv2509.16495v2-mono.pdf) | [双语](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/Shift-Parallelism_ASPLOS26_arXiv2509.16495v2-dual.pdf) |
+| 8 | XY-Serve | 生产数据中心 LLM serving。 | [原文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/original/XY-Serve_ASPLOS26_preprint-arXiv2412.18106v1.pdf) | [中文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/XY-Serve_ASPLOS26_preprint-arXiv2412.18106v1-mono.pdf) | [双语](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/XY-Serve_ASPLOS26_preprint-arXiv2412.18106v1-dual.pdf) |
+| 9 | Bullet | 数据中心 GPU 时空编排。 | [原文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/original/Bullet_ASPLOS26_arXiv2504.19516v4.pdf) | [中文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/Bullet_ASPLOS26_arXiv2504.19516v4-mono.pdf) | [双语](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/Bullet_ASPLOS26_arXiv2504.19516v4-dual.pdf) |
+| 10 | DynamoLLM | 数据中心推理集群设计与重构。 | [原文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/original/DynamoLLM_HPCA25_arXiv2408.00741v1.pdf) | [中文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/DynamoLLM_HPCA25_arXiv2408.00741v1-mono.pdf) | [双语](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/DynamoLLM_HPCA25_arXiv2408.00741v1-dual.pdf) |
+| 11 | POD-Attention | GPU 内核层 Prefill/Decode 重叠。 | [原文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/original/POD-Attention_ASPLOS25_arXiv2410.18038v2.pdf) | [中文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/POD-Attention_ASPLOS25_arXiv2410.18038v2-mono.pdf) | [双语](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/POD-Attention_ASPLOS25_arXiv2410.18038v2-dual.pdf) |
+| 12 | SwiftSpec | 服务器基础设施内的解耦推测解码。 | [原文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/original/SwiftSpec_ASPLOS26_arXiv2506.11309v1.pdf) | [中文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/SwiftSpec_ASPLOS26_arXiv2506.11309v1-mono.pdf) | [双语](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/SwiftSpec_ASPLOS26_arXiv2506.11309v1-dual.pdf) |
+| 13 | vAttention | 数据中心 KV cache 虚拟内存管理。 | [原文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/original/vAttention_ASPLOS25_arXiv2405.04437v3.pdf) | [中文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/vAttention_ASPLOS25_arXiv2405.04437v3-mono.pdf) | [双语](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/vAttention_ASPLOS25_arXiv2405.04437v3-dual.pdf) |
+| 14 | AQUA | Scale-up GPU 域内存卸载。 | [原文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/original/AQUA_ASPLOS25_arXiv2407.21255v3.pdf) | [中文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/AQUA_ASPLOS25_arXiv2407.21255v3-mono.pdf) | [双语](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/AQUA_ASPLOS25_arXiv2407.21255v3-dual.pdf) |
+| 15 | Kelle | 仅边侧 KV/eDRAM，无云侧协同执行。 | [原文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/original/Kelle_MICRO25_arXiv2510.16040v1.pdf) | [中文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/Kelle_MICRO25_arXiv2510.16040v1-mono.pdf) | [双语](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/Kelle_MICRO25_arXiv2510.16040v1-dual.pdf) |
+| 16 | llm.npu | 纯端侧异构 NPU 推理。 | [原文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/original/llm.npu_ASPLOS25_arXiv2407.05858v2.pdf) | [中文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/llm.npu_ASPLOS25_arXiv2407.05858v2-mono.pdf) | [双语](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/llm.npu_ASPLOS25_arXiv2407.05858v2-dual.pdf) |
+
+### B.2 历史 CNN/DNN 协同推理（9）
+
+这 9 篇保存在 `other-knowledge`，作为背景知识，不计入严格边云协同 20 篇。
+
+| # | 论文 | 分类说明 | 原文 | 中文 | 双语 |
+|---:|---|---|---|---|---|
+| 17 | Neurosurgeon | 经典云—移动边缘切分推理，但对象是 DNN/CNN，不是 LLM。 | [原文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/original/Neurosurgeon_ASPLOS17.pdf) | [中文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/Neurosurgeon_ASPLOS17-mono.pdf) | [双语](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/Neurosurgeon_ASPLOS17-dual.pdf) |
+| 18 | Edgent | 设备—边缘 DNN 协同与早退，不是 LLM。 | [原文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/original/Edgent_SEC18_arXiv1806.07840.pdf) | [中文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/Edgent_SEC18_arXiv1806.07840-mono.pdf) | [双语](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/Edgent_SEC18_arXiv1806.07840-dual.pdf) |
+| 19 | JointDNN | 移动云 DNN 训练/推理切分，不是 LLM。 | [原文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/original/JointDNN_TMC21_arXiv1801.08618.pdf) | [中文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/JointDNN_TMC21_arXiv1801.08618-mono.pdf) | [双语](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/JointDNN_TMC21_arXiv1801.08618-dual.pdf) |
+| 20 | DDNN | 云、边与端的分布式 DNN，不是 LLM。 | [原文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/original/DDNN_ICDCS17_arXiv1709.01921.pdf) | [中文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/DDNN_ICDCS17_arXiv1709.01921-mono.pdf) | [双语](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/DDNN_ICDCS17_arXiv1709.01921-dual.pdf) |
+| 21 | BottleNet++ | 设备—边缘 CNN 中间特征压缩，不是 LLM。 | [原文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/original/BottleNetPlusPlus_ICCW20_arXiv1910.14315.pdf) | [中文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/BottleNetPlusPlus_ICCW20_arXiv1910.14315-mono.pdf) | [双语](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/BottleNetPlusPlus_ICCW20_arXiv1910.14315-dual.pdf) |
+| 22 | SPINN | 设备—云渐进式神经网络推理，不是 LLM。 | [原文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/original/SPINN_MobiCom20_arXiv2008.06402.pdf) | [中文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/SPINN_MobiCom20_arXiv2008.06402-mono.pdf) | [双语](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/SPINN_MobiCom20_arXiv2008.06402-dual.pdf) |
+| 23 | CLIO | IoT—云深度学习流水线编译，不是 LLM。 | [原文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/original/CLIO_MobiCom20.pdf) | [中文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/CLIO_MobiCom20-mono.pdf) | [双语](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/CLIO_MobiCom20-dual.pdf) |
+| 24 | AppealNet | 边—云 DNN 推理架构，不是 LLM。 | [原文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/original/AppealNet_DAC21_arXiv2105.04104.pdf) | [中文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/AppealNet_DAC21_arXiv2105.04104-mono.pdf) | [双语](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/AppealNet_DAC21_arXiv2105.04104-dual.pdf) |
+| 25 | MultiTASC | 消费边缘级联 DNN 调度，不是 LLM。 | [原文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/original/MultiTASC_arXiv2306.12830.pdf) | [中文](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/MultiTASC_arXiv2306.12830-mono.pdf) | [双语](https://github.com/666loyazzy/-/blob/other-knowledge/papers/translated/MultiTASC_arXiv2306.12830-dual.pdf) |
 
 ## C. 机器人与 ROS 2（12）
 
-1. **PythonRobotics: a Python code collection of robotics algorithms** — 2018
-2. **Robot Operating System 2: Design, Architecture, and Uses In The Wild** — 2022
-3. **A Review of Sensing Technologies for Indoor Autonomous Mobile Robots** — 2024
-4. **SLAM Toolbox: SLAM for the dynamic world** — 2021
-5. **Path Planning for Autonomous Mobile Robots: A Review** — 2021
-6. **Open3D: A Modern Library for 3D Data Processing** — 2018
-7. **The Marathon 2: A Navigation System** — 2020
-8. **Regulated Pure Pursuit for Robot Path Tracking** — 2023
-9. **A Step by Step Mathematical Derivation and Tutorial on Kalman Filters** — 2019
-10. **KISS-ICP: In Defense of Point-to-Point ICP — Simple, Accurate, and Robust Registration If Done the Right Way** — 2023
-11. **ORB-SLAM2: an Open-Source SLAM System for Monocular, Stereo and RGB-D Cameras** — 2017
-12. **Past, Present, and Future of Simultaneous Localization and Mapping: Towards the Robust-Perception Age** — 2016
+1. **PythonRobotics: a Python code collection of robotics algorithms** — 2018 — [原文](https://github.com/666loyazzy/-/blob/robotics-papers/papers/original/PythonRobotics_arXiv1808.10703v3.pdf) · [中文](https://github.com/666loyazzy/-/blob/robotics-papers/papers/translated/PythonRobotics_arXiv1808.10703v3-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/robotics-papers/papers/translated/PythonRobotics_arXiv1808.10703v3-dual.pdf)
+2. **Robot Operating System 2: Design, Architecture, and Uses In The Wild** — 2022 — [原文](https://github.com/666loyazzy/-/blob/robotics-papers/papers/original/ROS2_Design_Architecture_Uses_arXiv2211.07752v1.pdf) · [中文](https://github.com/666loyazzy/-/blob/robotics-papers/papers/translated/ROS2_Design_Architecture_Uses_arXiv2211.07752v1-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/robotics-papers/papers/translated/ROS2_Design_Architecture_Uses_arXiv2211.07752v1-dual.pdf)
+3. **A Review of Sensing Technologies for Indoor Autonomous Mobile Robots** — 2024 — [原文](https://github.com/666loyazzy/-/blob/robotics-papers/papers/original/Indoor_Mobile_Robot_Sensing_Review_Sensors2024.pdf) · [中文](https://github.com/666loyazzy/-/blob/robotics-papers/papers/translated/Indoor_Mobile_Robot_Sensing_Review_Sensors2024-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/robotics-papers/papers/translated/Indoor_Mobile_Robot_Sensing_Review_Sensors2024-dual.pdf)
+4. **SLAM Toolbox: SLAM for the dynamic world** — 2021 — [原文](https://github.com/666loyazzy/-/blob/robotics-papers/papers/original/SLAM_Toolbox_JOSS2021.pdf) · [中文](https://github.com/666loyazzy/-/blob/robotics-papers/papers/translated/SLAM_Toolbox_JOSS2021-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/robotics-papers/papers/translated/SLAM_Toolbox_JOSS2021-dual.pdf)
+5. **Path Planning for Autonomous Mobile Robots: A Review** — 2021 — [原文](https://github.com/666loyazzy/-/blob/robotics-papers/papers/original/Mobile_Robot_Path_Planning_Review_Sensors2021.pdf) · [中文](https://github.com/666loyazzy/-/blob/robotics-papers/papers/translated/Mobile_Robot_Path_Planning_Review_Sensors2021-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/robotics-papers/papers/translated/Mobile_Robot_Path_Planning_Review_Sensors2021-dual.pdf)
+6. **Open3D: A Modern Library for 3D Data Processing** — 2018 — [原文](https://github.com/666loyazzy/-/blob/robotics-papers/papers/original/Open3D_arXiv1801.09847v1.pdf) · [中文](https://github.com/666loyazzy/-/blob/robotics-papers/papers/translated/Open3D_arXiv1801.09847v1-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/robotics-papers/papers/translated/Open3D_arXiv1801.09847v1-dual.pdf)
+7. **The Marathon 2: A Navigation System** — 2020 — [原文](https://github.com/666loyazzy/-/blob/robotics-papers/papers/original/Marathon2_Navigation_System_arXiv2003.00368v2.pdf) · [中文](https://github.com/666loyazzy/-/blob/robotics-papers/papers/translated/Marathon2_Navigation_System_arXiv2003.00368v2-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/robotics-papers/papers/translated/Marathon2_Navigation_System_arXiv2003.00368v2-dual.pdf)
+8. **Regulated Pure Pursuit for Robot Path Tracking** — 2023 — [原文](https://github.com/666loyazzy/-/blob/robotics-papers/papers/original/Regulated_Pure_Pursuit_arXiv2305.20026v1.pdf) · [中文](https://github.com/666loyazzy/-/blob/robotics-papers/papers/translated/Regulated_Pure_Pursuit_arXiv2305.20026v1-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/robotics-papers/papers/translated/Regulated_Pure_Pursuit_arXiv2305.20026v1-dual.pdf)
+9. **A Step by Step Mathematical Derivation and Tutorial on Kalman Filters** — 2019 — [原文](https://github.com/666loyazzy/-/blob/robotics-papers/papers/original/Kalman_Filter_Tutorial_arXiv1910.03558v1.pdf) · [中文](https://github.com/666loyazzy/-/blob/robotics-papers/papers/translated/Kalman_Filter_Tutorial_arXiv1910.03558v1-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/robotics-papers/papers/translated/Kalman_Filter_Tutorial_arXiv1910.03558v1-dual.pdf)
+10. **KISS-ICP: In Defense of Point-to-Point ICP - Simple, Accurate, and Robust Registration If Done the Right Way** — 2023 — [原文](https://github.com/666loyazzy/-/blob/robotics-papers/papers/original/KISS-ICP_RAL2023.pdf) · [中文](https://github.com/666loyazzy/-/blob/robotics-papers/papers/translated/KISS-ICP_RAL2023-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/robotics-papers/papers/translated/KISS-ICP_RAL2023-dual.pdf)
+11. **ORB-SLAM2: an Open-Source SLAM System for Monocular, Stereo and RGB-D Cameras** — 2017 — [原文](https://github.com/666loyazzy/-/blob/robotics-papers/papers/original/ORB-SLAM2_TRO2017_arXiv1610.06475v1.pdf) · [中文](https://github.com/666loyazzy/-/blob/robotics-papers/papers/translated/ORB-SLAM2_TRO2017_arXiv1610.06475v1-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/robotics-papers/papers/translated/ORB-SLAM2_TRO2017_arXiv1610.06475v1-dual.pdf)
+12. **Past, Present, and Future of Simultaneous Localization and Mapping: Towards the Robust-Perception Age** — 2016 — [原文](https://github.com/666loyazzy/-/blob/robotics-papers/papers/original/SLAM-Robust-Perception_TRO2016.pdf) · [中文](https://github.com/666loyazzy/-/blob/robotics-papers/papers/translated/SLAM-Robust-Perception_TRO2016-mono.pdf) · [双语](https://github.com/666loyazzy/-/blob/robotics-papers/papers/translated/SLAM-Robust-Perception_TRO2016-dual.pdf)
 
-[查看机器人分支](https://github.com/666loyazzy/-/blob/robotics-papers/PAPERS.md)
+完整来源、引用与阅读提示见[机器人主题索引](https://github.com/666loyazzy/-/blob/robotics-papers/PAPERS.md)。
 
-## 计数规则
+## 计数与维护规则
 
-- 同一篇论文的原文、中文版和双语版只计为 1 篇。
-- `main` 只汇总，不复制主题分支的大体积 PDF。
-- 新增论文时同步更新本文件、主干 README 和对应主题分支。
+- 同一篇论文的原文、中文版和双语版只计为 1 篇；跨分支副本也不重复计数。
+- 严格集合的标题、会议/期刊、顺序和 PDF 文件映射以 `edge-cloud-papers/PAPERS.md` 及 `papers/SOURCES.tsv` 为准。
+- 本仓库 `edge-cloud-papers/papers/` 与独立仓库 `research-papers/main/papers/` 使用同一套论文和 PDF；替换时同步两个仓库的文件目录、来源及验收记录。
+- 辅助知识与机器人资料分别以对应主题分支的索引和实际文件为准。
+- 更新主题清单时，同步本仓库 `main` 的导航、`桌宠` 的总索引及独立仓库 `main` 的总索引，并核对所有 README 的导航、规模和链接。
