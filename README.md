@@ -1,14 +1,17 @@
 # Awesome Robotics & ROS 2 Papers
 
+仓库导航：[总索引（57 篇）](https://github.com/666loyazzy/research-papers/blob/main/PAPERS.md) · [严格边云（20 篇）](https://github.com/666loyazzy/-/blob/edge-cloud-papers/PAPERS.md) · [辅助知识（25 篇）](https://github.com/666loyazzy/-/blob/other-knowledge/PAPERS.md) · [机器人与 ROS 2（12 篇）](https://github.com/666loyazzy/-/blob/robotics-papers/PAPERS.md)。
+
 机器人与 ROS 2 论文选读仓库。当前收录课程“论文选读·第 1 期”的 **12 篇论文**，覆盖算法实现、ROS 2 架构、传感器、点云、定位建图、路径规划、导航控制和卡尔曼滤波。
 
 每篇论文统一整理：原文 PDF、纯中文嵌字版、中英双语版、BibTeX 引用和阅读提示。
 
 ## 分支导航
 
-- [`main`](https://github.com/666loyazzy/-/tree/main) - 全仓库总入口与跨方向论文清单
-- [`edge-cloud-papers`](https://github.com/666loyazzy/-/tree/edge-cloud-papers) - DynoPipe / 边云协同论文库
-- [`robotics-papers`](https://github.com/666loyazzy/-/tree/robotics-papers) - 机器人与 ROS 2 论文库（当前分支）
+- [`main`](https://github.com/666loyazzy/-/tree/main) - 总入口，57 篇不重复论文
+- [`edge-cloud-papers`](https://github.com/666loyazzy/-/tree/edge-cloud-papers) - 严格边云协同集合，20 篇，含 PipeSD 与 SpecEdge
+- [`other-knowledge`](https://github.com/666loyazzy/-/tree/other-knowledge) - 辅助知识，25 篇
+- [`robotics-papers`](https://github.com/666loyazzy/-/tree/robotics-papers) - 机器人与 ROS 2，12 篇（当前分支）
 
 ## 第 1 期论文清单
 

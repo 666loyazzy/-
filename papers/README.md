@@ -1,5 +1,7 @@
 # PDF 来源与校验
 
+仓库导航：[总索引（57 篇）](https://github.com/666loyazzy/research-papers/blob/main/PAPERS.md) · [严格边云（20 篇）](https://github.com/666loyazzy/-/blob/edge-cloud-papers/PAPERS.md) · [辅助知识（25 篇）](https://github.com/666loyazzy/-/blob/other-knowledge/PAPERS.md) · [机器人与 ROS 2（12 篇）](https://github.com/666loyazzy/-/blob/robotics-papers/PAPERS.md)。
+
 更新时间：2026-09-09。当前共 **12 篇原文、12 份纯中文嵌字版、12 份中英双语版**。
 
 | # | 论文 | 公共来源 | 原文页数 | 中文页数 | 双语页数 |

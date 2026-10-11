@@ -1,5 +1,9 @@
 # Reading notes
 
+仓库导航：[总索引（57 篇）](https://github.com/666loyazzy/research-papers/blob/main/PAPERS.md) · [严格边云（20 篇）](https://github.com/666loyazzy/-/blob/edge-cloud-papers/PAPERS.md) · [辅助知识（25 篇）](https://github.com/666loyazzy/-/blob/other-knowledge/PAPERS.md) · [机器人与 ROS 2（12 篇）](https://github.com/666loyazzy/-/blob/robotics-papers/PAPERS.md)。
+
+本目录对应机器人主题的 12 篇论文；完整论文、原文与译文见 [`../PAPERS.md`](../PAPERS.md)。
+
 - [`PythonRobotics.md`](PythonRobotics.md) - 算法输入输出、参数与动画
 - [`ROS2-Architecture.md`](ROS2-Architecture.md) - 节点、话题、DDS、QoS 与系统案例
 - [`Sensing-Review.md`](Sensing-Review.md) - 雷达、相机、IMU、编码器与融合
