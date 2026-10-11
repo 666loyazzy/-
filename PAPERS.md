@@ -1,5 +1,9 @@
 # Other Knowledge Paper Index
 
+仓库导航：[总索引（57 篇）](https://github.com/666loyazzy/research-papers/blob/main/PAPERS.md) · [严格边云（20 篇）](https://github.com/666loyazzy/-/blob/edge-cloud-papers/PAPERS.md) · [辅助知识（25 篇）](https://github.com/666loyazzy/-/blob/other-knowledge/PAPERS.md) · [机器人与 ROS 2（12 篇）](https://github.com/666loyazzy/-/blob/robotics-papers/PAPERS.md)。
+
+本主题共 25 篇：相邻 LLM 系统知识 16 篇，历史 CNN/DNN 协同推理 9 篇。均提供原文、中文和双语 PDF。
+
 ## A. 相邻的 LLM 系统知识（16 篇）
 
 | # | Paper | 不进入严格边云 LLM 核心的原因 |

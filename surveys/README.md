@@ -1,5 +1,9 @@
 # Survey Workspace — DynoPipe Direction
 
+仓库导航：[总索引（57 篇）](https://github.com/666loyazzy/research-papers/blob/main/PAPERS.md) · [严格边云（20 篇）](https://github.com/666loyazzy/-/blob/edge-cloud-papers/PAPERS.md) · [辅助知识（25 篇）](https://github.com/666loyazzy/-/blob/other-knowledge/PAPERS.md) · [机器人与 ROS 2（12 篇）](https://github.com/666loyazzy/-/blob/robotics-papers/PAPERS.md)。
+
+本文保留 DynoPipe 方向的研究规划与笔记。当前严格边云集合为 20 篇（含 PipeSD 与 SpecEdge），收录范围、论文及 PDF 以[严格主题索引](https://github.com/666loyazzy/-/blob/edge-cloud-papers/PAPERS.md)和[分类标准](https://github.com/666loyazzy/-/blob/edge-cloud-papers/TAXONOMY.md)为准。
+
 Working scope: **Dynamic Edge-Cloud LLM Serving and Model Partitioning**.
 
 ## Proposed Survey Structure
