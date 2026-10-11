@@ -1,0 +1,2 @@
+# Preserve PDF bytes and display PDF changes as binary assets.
+*.pdf binary

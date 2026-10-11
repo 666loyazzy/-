@@ -1,6 +1,8 @@
 # Taxonomy - Strict Edge-Cloud Collaborative LLM Inference
 
-This repository is intentionally narrow. Except for the explicitly retained DynO historical baseline, a paper is included only when an endpoint/edge model and a cloud/server model jointly contribute to the same LLM/MLLM inference output.
+当前严格集合为 20 篇，含 PipeSD 与 SpecEdge；论文清单以[严格主题索引](https://github.com/666loyazzy/-/blob/edge-cloud-papers/PAPERS.md)为准。
+
+The strict edge-cloud theme collection is intentionally narrow. Except for the explicitly retained DynO historical baseline, a paper is included only when an endpoint/edge model and a cloud/server model jointly contribute to the same LLM/MLLM inference output.
 
 ## A. Dynamic Partitioning / Split Computing
 
